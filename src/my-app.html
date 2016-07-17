@@ -7,7 +7,6 @@
 <link rel="import" href="../bower_components/app-layout/app-header/app-header.html">
 <link rel="import" href="../bower_components/app-layout/app-header-layout/app-header-layout.html">
 <link rel="import" href="../bower_components/app-layout/app-toolbar/app-toolbar.html">
-<link rel="import" href="../bower_components/app-layout/app-box/app-box.html">
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../bower_components/iron-pages/iron-pages.html">
 <link rel="import" href="../bower_components/iron-selector/iron-selector.html">
@@ -21,11 +20,8 @@
 
       :host {
         display: block;
-        --app-primary-color: #fff;
+        --app-primary-color: #4285f4;
         --app-secondary-color: black;
-      }
-      body {
-        background-color: #fff;
       }
 
       app-header {
@@ -33,10 +29,9 @@
         color: #fff;
       }
       app-header paper-icon-button {
-        --paper-icon-button-ink-color: #FF5252;
-        color: #333;
+        --paper-icon-button-ink-color: white;
       }
-      
+
       .drawer-list {
         margin: 0 20px;
       }
@@ -54,15 +49,6 @@
       .drawer-list a.subroute {
         padding-left: 32px;
       }
-      h4 {
-        color: #333;
-        margin: 10px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: 300;
-      }
-      a {
-        text-decoration: none;
-      }
 
 
     </style>
@@ -71,6 +57,7 @@
     <app-route
         route="{{route}}"
         pattern="/:page"
+        data="{{routeData}}"
         tail="{{subroute}}"></app-route>
 
     <app-drawer-layout fullbleed>
@@ -80,28 +67,25 @@
         <app-toolbar>Menu</app-toolbar>
         <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
           <a name="home" href="/home">Home</a>
-          <a name="contactus" href="/contactus">Contact Us</a>
-          <a name="cardtheory" href="/cardtheory">Card Theory</a>          
-          <!--<a name="dekos" href="/dekos">Grab a deko</a>
-          <a name="newaccount" href="/newaccount">Open an Account</a>       -->
+          <a name="view2" href="/view2">View Two</a>
+          <a name="view3" href="/view3">View Three</a>
         </iron-selector>
       </app-drawer>
 
       <!-- Main content -->
       <app-header-layout has-scrolling-region>
 
-        <app-header>
+        <app-header condenses reveals effects="waterfall">
           <app-toolbar>
-            <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>       
+            <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
+            <div title>My App</div>
           </app-toolbar>
         </app-header>
 
         <iron-pages role="main" selected="[[page]]" attr-for-selected="name">
           <my-home name="home"></my-home>
-          <my-dekos name="dekos"></my-dekos>   
-          <my-contactus name="contactus"></my-contactus>
-          <my-cardtheory name="cardtheory"></my-cardtheory>                
-          <my-newaccount name="newaccount"></my-newaccount>     
+          <my-view2 name="view2"></my-view2>
+          <my-view3 name="view3"></my-view3>
         </iron-pages>
 
       </app-header-layout>
