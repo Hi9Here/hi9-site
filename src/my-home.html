@@ -17,10 +17,11 @@
     }
     app-box {
       height: 600px;
+      padding: 300px 0px 0px 0px;
     }
     .first {
       --app-box-background-front-layer: {
-        background-image: url(/images/bg/Croped/Individual.jpg);
+        background-image: url(../images/sections/woman.jpg);
         background-position: center;
         padding-bottom: 120px;
         margin-top: -20px;
@@ -73,18 +74,23 @@
       };
     }
     article {
-      max-width: 500px;
       text-align: center;
-      margin: 100px auto;
+      padding: 20px;
+      background: linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    )
     }
     article h2 {
       font-weight: 100;
       font-size: 50px;
       margin: 5px;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family: ralewayextralight, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #fff;
     }
     article p {
       font-size: 18px;
+      color: #fff;
     }
     article hr {
       width: 100px;
@@ -101,32 +107,11 @@
 <body class="fullbleed" unresolved>
 
   <section>
+    <app-box class="first" effects="parallax-background">
     <article>
-      <div id="logo">
-        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 649.75 250.18"><defs><style>.cls-1{font-size:231.91px;fill:#333;stroke:#333;stroke-miterlimit:10;font-family:Gill Sans;}.cls-2{letter-spacing:-6px;}.cls-3{fill:none;stroke:#f05455;stroke-width:14px;}</style></defs><title>deko-logo-slogon-master</title><text class="cls-1" transform="translate(187.8 196.12)">de<tspan class="cls-2" x="229.31" y="0">k</tspan><tspan x="333.49" y="0">o</tspan></text><rect class="cls-3" x="25.84" y="16.86" width="134.09" height="174.51"/><rect class="cls-3" x="7" y="34.04" width="134.09" height="174.51"/><text x="-27.38" y="-15.72"/></svg>
-      </div>
-        
-      <p>Shares & Organises Websites - Fast</p>
-      <p>Free to Get Started to Use with no account</p>      
-      <h2>LAUNCHING JUN 16</h2>
-      
+      <h2>Web Made Simple</h2>
     </article>
-     <app-box class="first" 
-    effects="parallax-background"> </app-box>
-  </section>
-
-  <section>
-    <article>
-      <hr />
-      <h2>How It Works</h2>
-      <p>Each deko has a max of 10 Websites represented as cards.</p>
-      <p>Each card is a link to a Website.</p>
-      <p>You can Create, Share, Add and Organise your dekos how you wish </p>
-    </article>
-    <!-- 
-      This app-box uses the class `.second` and the mixin `--app-box-background-front-layer` to assign the background image. 
-    -->
-    <app-box class="second" effects="parallax-background"></app-box>
+    </app-box>
   </section>
 
   <section>
