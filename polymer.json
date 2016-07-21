@@ -3,7 +3,15 @@
   "shell": "src/my-app.html",
   "fragments": [
     "src/my-home.html",
-    "src/my-view2.html",
-    "src/my-view3.html"
+    "src/my-ngo.html",
+    "src/my-individuals.html",
+    "src/my-story.html",
+    "src/my-aboutus.html",
+    "src/my-blog.html",
+    "src/my-investor.html",
+    "src/my-pricing.html",
+    "src/my-joinus.html",
+    "src/my-contactus.html",
+    "src/my-dev.html"
   ]
 }
