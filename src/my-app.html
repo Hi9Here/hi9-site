@@ -67,8 +67,17 @@
         <app-toolbar>Menu</app-toolbar>
         <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
           <a name="home" href="/home">Home</a>
-          <a name="view2" href="/view2">View Two</a>
-          <a name="view3" href="/view3">View Three</a>
+          <a name="ngo" href="/ngo">NGO</a>
+          <a name="families" href="/families">Families</a>
+          <a name="individuals" href="/individuals">Individuals</a>
+          <a name="story" href="/story">Story</a>
+          <a name="aboutus" href="/aboutus">About Us</a>
+          <a name="blog" href="/blog">Blog</a>
+          <a name="investor" href="/investor">Investor</a>
+          <a name="pricing" href="/pricing">Pricing</a>
+          <a name="joinus" href="/joinus">Join Us</a>
+          <a name="contactus" href="/contactus">Contact Us</a>
+          <a name="dev" href="/dev">.dev</a>
         </iron-selector>
       </app-drawer>
 
@@ -85,8 +94,17 @@
 
         <iron-pages role="main" selected="[[page]]" attr-for-selected="name">
           <my-home name="home"></my-home>
-          <my-view2 name="view2"></my-view2>
-          <my-view3 name="view3"></my-view3>
+          <my-ngo name="ngo"></my-ngo>
+          <my-families name="families"></my-families>
+          <my-individuals name="individuals"></my-individuals>
+          <my-story name="story"></my-story>
+          <my-aboutus name="aboutus"></my-aboutus>
+          <my-blog name="blog"></my-blog>
+          <my-investor name="investor"></my-investor>
+          <my-pricing name="pricing"></my-pricing>
+          <my-joinus name="joinus"></my-joinus>
+          <my-contactus name="contactus"></my-contactus>
+          <my-dev name="dev"></my-dev>
         </iron-pages>
 
       </app-header-layout>
