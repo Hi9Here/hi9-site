@@ -4,12 +4,18 @@
 <link rel="import" href="../bower_components/app-layout/demo/sample-content.html">
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
 
-
 <dom-module id="my-home">
 
   <template>
 
-<style is="custom-style">
+<style is="custom-style" >
+    #buttons {
+      text-align: center;
+    }
+    #buttons paper-button {
+      display: inline-block;
+      margin: 20px 0 0 5px;
+    }
     h1 {
       font-size: 50px;
       color: #ffffff;
@@ -131,7 +137,12 @@
       <article>
         <h1>Web Made Simple</h1>  
       </article>
-      <paper-button raised>Find Out More</paper-button>
+      <div id="buttons">
+        <paper-button raised>NGO</paper-button>
+        <paper-button raised>Family</paper-button>
+        <paper-button raised>Individual</paper-button>
+        <paper-button raised>SME</paper-button>
+      </div>
     </app-box>
   </section>
 
