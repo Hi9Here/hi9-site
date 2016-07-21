@@ -75,8 +75,8 @@
       <!-- Main content -->
       <app-header-layout has-scrolling-region>
         <app-header condenses reveals effects="waterfall">
-          <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
-          <app-toolbar>
+          <paper-icon-button icon="menu" drawer-toggle hidden$="{{wideLayout}}"></paper-icon-button>
+          <app-toolbar hidden$="{{!wideLayout}}">
             <div title>
               <img src="../images/logo/hi9-logo-128.png" alt="Hi9 Logo">
             </div>
