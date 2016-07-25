@@ -1,5 +1,8 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/iron-image/iron-image.html">
+<link rel="import" href="../bower_components/paper-toolbar/paper-toolbar.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
 
 <dom-module id="my-individuals">
 
@@ -32,20 +35,27 @@
       h1 {
         font-size: 22px;
         margin: 16px 0;
-        color: #212121;
+        color: #fff;
+        font-weight: 300;
       }
-      #pageimage {
-        width: 100%;
-        height: 300px;
+      paper-toolbar {
+        background-color: orange;
       }
-
+      iron-icon {
+        margin-right: 10px;
+      }
     </style>
 
     <div class="card">
   
-      <iron-image src="/images/pages/Individual.jpg" id="pageimage" preload sizing="cover"></iron-image>
-    
-      <h1>Individuals</h1>
+      
+      <paper-toolbar class="medium">
+        <iron-icon icon="accessibility"></iron-icon>
+        <div title>     
+          <h1>Individuals</h1>
+        </div>
+      </paper-toolbar>
+
       <p>Whether you’re connected or not - take a look at our amazingly priced hardware solutions that come with super friendly customer support. And, no matter what your digital skills, why not sign up to start using our software solution, deko, which will be avaialble soon.</p>
       <p>With decko you can create your own library of weblinks clearly displayed as cards which you can group together any way you want into decks. This will not just keep you organised but also let you share useful info., personal favourites & more with friends & family. Excited?</p>
 <p>Sign up</p>
