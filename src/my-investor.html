@@ -32,17 +32,35 @@
       h1 {
         font-size: 22px;
         margin: 16px 0;
-        color: #212121;
+        color: #fff;
+        font-weight: 300;
       }
-      #pageimage {
-        width: 100%;
-        height: 300px;
+      paper-toolbar {
+        background-color: #03B5A0;
+      }
+      iron-icon {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 20px;
+      }
+      a {
+        text-decoration: none;
+      }
+      paper-button {
+        color: #fff;
+        background-color: red;
       }
     </style>
 
     <div class="card">
-      <iron-image src="/images/pages/Investors.jpg" id="pageimage" preload sizing="cover"></iron-image>
-      <h1>Investors</h1>
+      <paper-toolbar class="medium">
+        <div title>     
+          <h1>Individuals</h1>
+        </div>
+        <iron-icon icon="account-circle"></iron-icon>
+      </paper-toolbar>
+      
       <p>HI9 is currently in talks with venture capitalists about funding to develop deko into the diverse, revolutionary product that it can be. So if you’re a venture capitalist who shares the same vision as Google and of course ourselves, then please Contact Us.</p>
       <p>But if you’re a member of the public, don’t panic…. deko was built with the vision of changing the lives of ordinary people across the globe. So we’re opening up investment opportunities to everyone. </p>
       <p>Currently we’re finalising our Crowdcube profile, where you’ll be able to join us on this amazing journey! Keep checking here for updates, or better still, Sign Up.</p>
