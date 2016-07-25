@@ -1,4 +1,5 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-image/iron-image.html">
 
 <dom-module id="my-aboutus">
 
@@ -33,10 +34,14 @@
         margin: 16px 0;
         color: #212121;
       }
+      #pageimage {
+        width: 100%;
+        height: 300px;
+      }
     </style>
 
     <div class="card">
-      <img src="/images/pages/Cornwall.jpg" alt="">
+       <iron-image src="/images/pages/Cornwall.jpg" id="pageimage" preload sizing="cover"></iron-image>
       <h1>About HI9</h1>
       <p>Hi9's' a rapidly growing tech startup based in beautiful Cornwall.</p>
       <p>Founded in 2014, our company mission was simple; to provide affordable computers directly or via an NGO to those that needed them the most whether on low income, disabled, vulnerable or socially excluded.</p>

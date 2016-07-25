@@ -1,4 +1,5 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-image/iron-image.html">
 
 <dom-module id="my-ngo">
 
@@ -32,10 +33,16 @@
         margin: 16px 0;
         color: #212121;
       }
+      #pageimage {
+        width: 100%;
+        height: 300px;
+      }
     </style>
 
     <div class="card">
-      <img src="/images/pages/NGO.jpg" alt="">
+      
+      <iron-image src="/images/pages/NGO.jpg" id="pageimage" preload sizing="cover"></iron-image>
+
       <h1>NGO</h1>
       <p>As an NGO, your job is to care for & to create opportunities for your customers. Hi9’s job is to make that process simpler.</p>
 <p>Being digitally included is now a priority but sadly the most in need, those on low income, the elderly, disabled & vulnerable, are not connected. Our mission is to provide all NGO’s with cost effective, intelligent solutions not only when it comes to hardware but also software.</p>

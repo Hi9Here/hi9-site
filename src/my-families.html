@@ -1,4 +1,5 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-image/iron-image.html">
 
 <dom-module id="my-families">
 
@@ -33,10 +34,14 @@
         margin: 16px 0;
         color: #212121;
       }
+      #pageimage {
+        width: 100%;
+        height: 300px;
+      }
     </style>
 
     <div class="card">
-      <img src="/images/pages/Family.jpg" alt="">
+       <iron-image src="/images/pages/Family.jpg" id="pageimage" preload sizing="cover"></iron-image>
       <h1>Families</h1>
       <p>Don’t want to be your parents tech support anymore? Fed-up looking over your kids shoulder? Then here’s what to do.</p>
       <p>Hi9 hardware is super secure & super simple to set up plus it’s utterly affordable. The Chromebook laptop is browser only, so no nasty updates, no security programmes; it’s all donne for you. It also has voice activation, great for the elderly or visually impaired, also good for kids.</p>
