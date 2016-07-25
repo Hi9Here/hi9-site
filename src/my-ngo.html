@@ -1,5 +1,7 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/iron-image/iron-image.html">
+<link rel="import" href="../bower_components/paper-toolbar/paper-toolbar.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
 <link rel="import" href="../bower_components/iron-icons/iron-icons.html">
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
 
@@ -33,11 +35,17 @@
       h1 {
         font-size: 22px;
         margin: 16px 0;
-        color: #212121;
+        color: #fff;
+        font-weight: 300;
       }
-      #pageimage {
-        width: 100%;
-        height: 300px;
+      paper-toolbar {
+        background-color: #03B5A0;
+      }
+      paper-toolbar iron-icon {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 20px;
       }
       a {
         text-decoration: none;
@@ -50,9 +58,12 @@
 
     <div class="card">
       
-      <iron-image src="/images/pages/NGO.jpg" id="pageimage" preload sizing="cover"></iron-image>
-
-      <h1>NGO</h1>
+      <paper-toolbar class="medium">
+        <div title>     
+          <h1>Individuals</h1>
+        </div>
+        <iron-icon icon="account-circle"></iron-icon>
+      </paper-toolbar>
       <p>As an NGO, your job is to care for & to create opportunities for your customers. Hi9’s job is to make that process simpler.</p>
 <p>Being digitally included is now a priority but sadly the most in need, those on low income, the elderly, disabled & vulnerable, are not connected. Our mission is to provide all NGO’s with cost effective, intelligent solutions not only when it comes to hardware but also software.</p>
 <p>Our current digital bundles include a 11” or 14” Chromebook, a MiFi with Data SIM & an optional Yubikey for that extra bit of security. Each of these items have been carefully selected to make getting connected as easy as possible.</p>
