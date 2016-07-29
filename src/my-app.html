@@ -61,7 +61,9 @@
       a {
         height: 50px;
       }
-
+      .menu:hover {
+        background-color: #f0f2fb;
+      }
 
     </style>
 
@@ -78,18 +80,18 @@
       <app-drawer>
         <app-toolbar>Menu</app-toolbar>
         <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
-          <a name="home" href="/home"><iron-icon icon="home"></iron-icon>Home</a>
-          <a name="ngo" href="/ngo"><iron-icon icon="folder-shared"></iron-icon>NGO</a>
-          <a name="families" href="/families"><iron-icon icon="supervisor-account"></iron-icon>Families</a>
-          <a name="individuals" href="/individuals"><iron-icon icon="account-circle"></iron-icon>Individuals</a>
-          <!--<a name="story" href="/story">Story</a>-->
-          <a name="aboutus" href="/aboutus"><iron-icon icon="account-circle"></iron-icon>About Us</a>
-          <!--<a name="blog" href="/blog">Blog</a>-->
-          <a name="investor" href="/investor"><iron-icon icon="account-circle"></iron-icon>Investor</a>
-          <a name="pricing" href="/pricing"><iron-icon icon="account-circle"></iron-icon>Pricing</a>
-          <!--<a name="joinus" href="/joinus">Join Us</a>-->
-          <a name="contactus" href="/contactus"><iron-icon icon="account-circle"></iron-icon>Contact Us</a>
-          <a name="signup" href="/signup"><iron-icon icon="account-circle"></iron-icon>Sign Up</a>
+          <div class="menu"><a name="home" href="/home"><iron-icon icon="home"></iron-icon>Home</a></div>
+          <div class="menu"><a name="ngo" href="/ngo"><iron-icon icon="folder-shared"></iron-icon>NGO</a></div>
+          <div class="menu"><a name="families" href="/families"><iron-icon icon="supervisor-account"></iron-icon>Families</a></div>
+          <div class="menu"><a name="individuals" href="/individuals"><iron-icon icon="account-circle"></iron-icon>Individuals</a></div>
+          <div class="menu"><!--<a name="story" href="/story">Story</a>--></div>
+          <div class="menu"><a name="aboutus" href="/aboutus"><iron-icon icon="account-circle"></iron-icon>About Us</a></div>
+          <div class="menu"><!--<a name="blog" href="/blog">Blog</a>--></div>
+          <div class="menu"><a name="investor" href="/investor"><iron-icon icon="account-circle"></iron-icon>Investor</a></div>
+          <div class="menu"><a name="pricing" href="/pricing"><iron-icon icon="account-circle"></iron-icon>Pricing</a></div>
+          <div class="menu"><!--<a name="joinus" href="/joinus">Join Us</a>--></div>
+          <div class="menu"><a name="contactus" href="/contactus"><iron-icon icon="account-circle"></iron-icon>Contact Us</a></div>
+          <div class="menu"><a name="signup" href="/signup"><iron-icon icon="account-circle"></iron-icon>Sign Up</a></div>
           <!--<a name="dev" href="/dev">.dev</a>-->
         </iron-selector>
       </app-drawer>
