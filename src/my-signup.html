@@ -3,6 +3,9 @@
 <link rel="import" href="../bower_components/paper-toolbar/paper-toolbar.html">
 <link rel="import" href="../bower_components/iron-icon/iron-icon.html">
 <link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/paper-material/paper-material.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
 
 <dom-module id="my-signup">
 
@@ -13,27 +16,17 @@
         display: block;
         padding: 10px;
       }
-      .card {
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-        padding: 16px;
-        margin: 24px;
-        border-radius: 5px;
-        background-color: #fff;
-        color: #757575;
-      }
-      .circle {
-        display: inline-block;
-        height: 64px;
-        width: 64px;
-        border-radius: 50%;
-        background: #ddd;
-        line-height: 64px;
-        font-size: 30px;
-        color: #555;
-        text-align: center;
-      }
+
       h1 {
+        font-family: 'Roboto', 'Noto', sans-serif;
         font-size: 22px;
+        margin: 16px 0;
+        color: #fff;
+        font-weight: 300;
+      }
+      h2 {
+        font-family: 'Roboto', 'Noto', sans-serif;
+        font-size: 18px;
         margin: 16px 0;
         color: #fff;
         font-weight: 300;
@@ -41,7 +34,7 @@
       paper-toolbar {
         background-color: red;
       }
-       iron-icon {
+      iron-icon {
         width: 40px;
         height: 40px;
         position: absolute;
@@ -54,31 +47,121 @@
         color: #fff;
         background-color: red;
       }
+      paper-material {
+        padding: 16px;
+        margin: 24px;
+        border-radius: 5px;
+        color: #757575;
+      }
+      #card paper-material {
+        background-color: #fff;
+      }
+      #requestbutton {
+        display: block;
+      }
+      #reqbut {
+        text-align: center;
+        margin: 10px;
+      }
+      #contactandvalue {
+        height: 100%;
+        padding-bottom: 50px;
+      }
+      .contactboxes {
+        width: 350px;
+        display: inline-block;
+        height: 500px;
+      }
+      #value {
+        margin: 20px;
+        float: right;
+      }
+      #value h2 {
+        color: #333;
+      }
+      p {
+        color: #333;
+      }
     </style>
 
-    <div class="card">
-  
-    
-      <paper-toolbar class="medium">
-        
-        <div title>     
-          <h1>Sign Up</h1>
-        </div>
-        <iron-icon icon="accessibility"></iron-icon>
-      </paper-toolbar>
+      <div id="card">
 
-    </div>
+        <paper-material elevation="1">
+        
+        <paper-toolbar class="medium">
+          <div title>
+            <h1>Sign Up</h1>
+          </div>
+          <iron-icon icon="accessibility"></iron-icon>
+        </paper-toolbar>
+
+        <div id="contactandvalue">
+
+          <div class="contactboxes">
+
+          <paper-material elevation="1">
+
+            <paper-toolbar>
+              <div title>
+                <h2>Request a Demo</h2>
+              </div>
+            </paper-toolbar>
+
+            <paper-input-container>
+              <label>Name*</label>
+              <input is="iron-input" required auto-validate error-message="needs some text!">
+            </paper-input-container>
+            <paper-input-container>
+              <label>Email*</label>
+              <input is="iron-input" required auto-validate error-message="needs some text!">
+            </paper-input-container>
+            <paper-input-container>
+              <label>Phone*</label>
+              <input is="iron-input" required auto-validate error-message="needs some text!">
+            </paper-input-container>
+              <paper-input-container>
+              <label>Company</label>
+              <input is="iron-input" required auto-validate error-message="needs some text!">
+            </paper-input-container>
+              <paper-input-container>
+              <label>Website</label>
+              <input is="iron-input" required auto-validate error-message="needs some text!">
+            </paper-input-container>
+              <paper-input-container>
+              <label>Country</label>
+              <input is="iron-input" required auto-validate error-message="needs some text!">
+            </paper-input-container>
+
+            <div id="requestbutton">
+              <div id="reqbut">
+                <paper-button raised>Request a Demo</paper-button>
+              </div>
+            </div>
+
+          </paper-material>
+
+          </div>
+
+          <div class="contactboxes">
+            <div id="value">
+              <h2>Web Made Simple</h2>
+              <p>This is the text where more info is needed</p>
+            </div>
+          </div>
+          
+        </div>
+
+        </paper-material>
+      </div>
 
   </template>
 
   <script>
-
     Polymer({
 
       is: 'my-signup'
 
     });
-
   </script>
 
 </dom-module>
