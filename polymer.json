@@ -3,7 +3,7 @@
   "shell": "src/my-app.html",
   "fragments": [
     "src/my-home.html",
-    "src/my-ngo.html",
+    "src/my-organisation.html",
     "src/my-individuals.html",
     "src/my-story.html",
     "src/my-aboutus.html",

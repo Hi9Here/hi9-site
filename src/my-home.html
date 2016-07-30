@@ -5,6 +5,9 @@
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
 <link rel="import" href="../bower_components/iron-icon/iron-icon.html">
 <link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/paper-material/paper-material.html">
+<link rel="import" href="../bower_components/paper-toolbar/paper-toolbar.html">
+
 
 
 <dom-module id="my-home">
@@ -16,14 +19,24 @@
     #buttons {
       text-align: center;
     }
-    #buttons paper-button {
+    #buttons paper-material {
       display: inline-block;
-      margin: 20px 0 0 5px;
+      width: 200px;
+      height: 250px;
+      background-color: #fff;
+      padding: 16px;
+      margin: 100px 10px 10px 10px;
+      border-radius: 5px;
+      color: #757575;
+    }
+    #buttons h3 {
+      font-weight: 300;
     }
     h1 {
       font-size: 50px;
       color: #ffffff;
       font-weight: 600;
+      margin:0;
     }
     body {
       margin: 0;
@@ -31,8 +44,8 @@
       background-color: #eee;
     }
     app-box {
-      height: 400px;
-      padding: 200px 0px 0px 0px;
+      height: 500px;
+      padding: 120px 0px 0px 0px;
     }
     .blank article {
       background-color: var(--app-primary-color);
@@ -103,7 +116,7 @@
     h2 {
       font-weight: 100;
       font-size: 30px;
-      margin: 5px;
+      margin: 0;
       font-family: ralewayextralight, "Helvetica Neue", Helvetica, Arial, sans-serif;
       color: #fff;
     }
@@ -145,25 +158,52 @@
         <h1>Web Made Simple</h1>  
       </article>
       <div id="buttons">
-        <a href="/ngo"><paper-button raised><iron-icon icon="folder-shared"></iron-icon>NGO</paper-button></a>
-        <a href="/families"><paper-button raised><iron-icon icon="supervisor-account"></iron-icon>Family</paper-button></a>
-        <a href="/individuals"><paper-button raised><iron-icon icon="account-circle"></iron-icon>Individual</paper-button></a>
+        <a href="/organisation">
+          <paper-material elevation="1">
+            <paper-toolbar>
+                <iron-icon icon="folder-shared"></iron-icon>
+                <div title>
+                  <h3>Organisations</h3>
+                </div>
+            </paper-toolbar>
+          </paper-material>
+        </a>
+        <a href="/families">
+          <paper-material elevation="1">
+            <paper-toolbar>
+                <iron-icon icon="supervisor-account"></iron-icon>
+                <div title>
+                  <h3>Families</h3>
+                </div>
+            </paper-toolbar>
+          </paper-material>
+        </a>
+        <a href="/individuals">
+          <paper-material elevation="1">
+            <paper-toolbar>
+                <iron-icon icon="account-circle"></iron-icon>
+                <div title>
+                  <h3>Individuals</h3>
+                </div>
+            </paper-toolbar>
+          </paper-material>
+        </a>
+
+      
       </div>
     </app-box>
   </section>
 
-  
-     <section>
+  <section>
     <article>
-      <hr />
-      <h2>Computers Are Just Too Hard to Use and It's Not Your Fault</h2>
+      <h2>"Computers Are Just Too Hard to Use and It's Not Your Fault</h2>
+      <h2>Walt Mossberg – Recode</h2>
     </article>
     <app-box class="second" effects="parallax-background"></app-box>
   </section>
 
   <section>
     <article>
-      <hr />
       <h2>For Friends</h2>
       <p>Share your favorites. List of places to go. Create your own deko of top tens. Your imagination.</p>
     </article>
@@ -172,7 +212,6 @@
 
   <section>
     <article>
-      <hr />
       <h2>For Family</h2>
       <p>Organise the sites that your family uses so they don’t need to search the web. You no longer have to be your parents tech support. </p>
     </article>
@@ -181,7 +220,6 @@
 
    <section>
     <article>
-      <hr />
       <h2>For Work</h2>
       <p>Organise and share for co workers sites they should visit. Host and event and share information to the attendees quickly and easily. 
 </p>
