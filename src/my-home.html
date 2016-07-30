@@ -34,7 +34,7 @@
     }
     h1 {
       font-size: 50px;
-      color: #ffffff;
+      color: #fff;
       font-weight: 600;
       margin:0;
     }
@@ -44,8 +44,7 @@
       background-color: #eee;
     }
     app-box {
-      height: 500px;
-      padding: 120px 0px 0px 0px;
+      height: 700px;
     }
     .blank article {
       background-color: var(--app-primary-color);
@@ -53,12 +52,22 @@
     }
     .first {
       --app-box-background-front-layer: {
-        background-image: url(../images/sections/woman.jpg);
-        background-position: center;
         padding-bottom: 120px;
-        margin-top: -20px;
+        margin-top: -40px;
         height: 100%;
+        background-color: #512da8;
       };
+    }
+    .first article {
+        background: none;
+        padding: 20px;
+    }
+    .first h2 {
+      margin: 0 20px 20px 20px;
+    }
+    paper-button {
+        color: #fff;
+        background-color: red;
     }
     .second {
       --app-box-background-front-layer: {
@@ -137,13 +146,6 @@
     p {
       margin: 0;
     }
-    paper-button {
-      background-color: var(--app-primary-color);
-      margin: 20px auto;
-      display: block;
-      width: 150px;
-      text-align: center;
-    }
     iron-icon {
       margin: 5px;
     }
@@ -155,12 +157,14 @@
   <section>
     <app-box class="first" effects="parallax-background">
       <article>
-        <h1>Web Made Simple</h1>  
+        <h1>Web Made Simple</h1> 
+        <h2>Don't teach people to use the Web make the Web Simple for People</h2>       
+        <paper-button raised>Request a Demo</paper-button>     
       </article>
       <div id="buttons">
         <a href="/organisation">
           <paper-material elevation="1">
-            <paper-toolbar>
+            <paper-toolbar style="background-color: #c40121">
                 <iron-icon icon="folder-shared"></iron-icon>
                 <div title>
                   <h3>Organisations</h3>
@@ -170,7 +174,7 @@
         </a>
         <a href="/families">
           <paper-material elevation="1">
-            <paper-toolbar>
+            <paper-toolbar style="background-color: #AA3964">
                 <iron-icon icon="supervisor-account"></iron-icon>
                 <div title>
                   <h3>Families</h3>
@@ -180,7 +184,7 @@
         </a>
         <a href="/individuals">
           <paper-material elevation="1">
-            <paper-toolbar>
+            <paper-toolbar style="background-color: #03B5A0">
                 <iron-icon icon="account-circle"></iron-icon>
                 <div title>
                   <h3>Individuals</h3>
