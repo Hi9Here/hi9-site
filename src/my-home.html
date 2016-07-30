@@ -7,6 +7,7 @@
 <link rel="import" href="../bower_components/iron-icons/iron-icons.html">
 <link rel="import" href="../bower_components/paper-material/paper-material.html">
 <link rel="import" href="../bower_components/paper-toolbar/paper-toolbar.html">
+<link rel="import" href="../bower_components/iron-image/iron-image.html">
 
 
 
@@ -35,7 +36,7 @@
     h1 {
       font-size: 50px;
       color: #fff;
-      font-weight: 600;
+      font-weight: 500;
       margin:0;
     }
     body {
@@ -60,10 +61,10 @@
     }
     .first article {
         background: none;
-        padding: 20px;
+        padding: 30px 0px 0px 0px;
     }
-    .first h2 {
-      margin: 0 20px 20px 20px;
+    .first #h2box {
+      margin: 0px 10px 35px 10px;
     }
     paper-button {
         color: #fff;
@@ -128,6 +129,7 @@
       margin: 0;
       font-family: ralewayextralight, "Helvetica Neue", Helvetica, Arial, sans-serif;
       color: #fff;
+      line-height: 1.3;
     }
     .blank h2{
       color: #333;
@@ -149,6 +151,10 @@
     iron-icon {
       margin: 5px;
     }
+    iron-image {
+      width: 200px;
+      height: 190px;
+    }
 
   </style>
 </head>
@@ -157,8 +163,11 @@
   <section>
     <app-box class="first" effects="parallax-background">
       <article>
-        <h1>Web Made Simple</h1> 
-        <h2>Don't teach people to use the Web make the Web Simple for People</h2>       
+        <h1>Web Made Simple and Secure</h1> 
+        <div id="h2box">
+          <h2>Don't Teach People to Use the Web. Make the Web Simple for People</h2>       
+          <h2>Hardware | Software | Support | Services</h2> 
+        </div>        
         <paper-button raised>Request a Demo</paper-button>     
       </article>
       <div id="buttons">
@@ -169,7 +178,8 @@
                 <div title>
                   <h3>Organisations</h3>
                 </div>
-            </paper-toolbar>
+            </paper-toolbar>          
+            <iron-image src="../images/card/organisation-smaller.jpg" preload sizing="cover"></iron-image>         
           </paper-material>
         </a>
         <a href="/families">
@@ -180,6 +190,7 @@
                   <h3>Families</h3>
                 </div>
             </paper-toolbar>
+            <iron-image src="../images/sections/Families.jpg" preload sizing="cover"></iron-image>
           </paper-material>
         </a>
         <a href="/individuals">
@@ -190,6 +201,7 @@
                   <h3>Individuals</h3>
                 </div>
             </paper-toolbar>
+            <iron-image src="../images/sections/Individual.jpg" preload sizing="cover"></iron-image>
           </paper-material>
         </a>
 
