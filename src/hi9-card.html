@@ -11,6 +11,7 @@
     <style>
       :host {
         display: inline-block;
+        margin: 10px;
       }
       iron-icon {
       margin: 5px;
@@ -29,13 +30,14 @@
     h3 {
       font-weight: 300;
     }
+
       
     </style>
     
    <a href="{{link}}">
     <paper-material elevation="1" style="width: {{width}}px; height: {{height}}px;">
       <paper-toolbar style="background-color: {{barcolor}}">
-        <iron-icon icon="folder-shared"></iron-icon>
+        <iron-icon icon="{{}}" style="display: {{icondisplay}}"></iron-icon>
         <div title>
           <h3>{{title}}</h3>
         </div>
@@ -52,6 +54,11 @@
       properties: {
       title: String,
       barcolor: String,
+      icon : String,
+      icondisplay : {
+        type: String,
+        value: "none"
+      },
       image: String,
       imagedisplay: {
         type: String,
@@ -64,7 +71,7 @@
       },
       height: {
         type: String,
-        value: 250
+        value: 300
       },
     }
     });

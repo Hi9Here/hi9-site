@@ -6,6 +6,7 @@
 <link rel="import" href="../bower_components/paper-input/paper-input.html">
 <link rel="import" href="../bower_components/paper-material/paper-material.html">
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="hi9-card.html">
 
 <dom-module id="my-signup">
 
@@ -34,7 +35,7 @@
       paper-toolbar {
         background-color: red;
       }
-      iron-icon {
+      paper-toolbar iron-icon {
         width: 40px;
         height: 40px;
         position: absolute;
@@ -68,13 +69,13 @@
         padding-bottom: 50px;
       }
       .contactboxes {
-        width: 350px;
         display: inline-block;
-        height: 500px;
+        height: 600px;
+        text-align: center;
       }
       #value {
         margin: 20px;
-        float: right;
+        text-align: left;
       }
       #value h2 {
         color: #333;
@@ -82,78 +83,177 @@
       p {
         color: #333;
       }
+      a {
+        text-decoration: none;
+      }
+      paper-button {
+        color: #fff;
+        background-color: red;
+      }
+      #cards {
+        display: block;
+      }
+      ul {
+        text-align: left;
+      }
+      h3 {
+        line-height: 1;
+      }
+      #contact {
+        width: 350px;
+      }
     </style>
 
       <div id="card">
 
-        <paper-material elevation="1">
-        
-        <paper-toolbar class="medium">
-          <div title>
-            <h1>Request a Demo</h1>
-          </div>
-          <iron-icon icon="accessibility"></iron-icon>
-        </paper-toolbar>
-
-        <div id="contactandvalue">
-
-          <div class="contactboxes">
-
           <paper-material elevation="1">
-
-            <paper-toolbar>
-              <div title>
-                <h2>Get a Call</h2>
-              </div>
-            </paper-toolbar>
-
-            <paper-input-container>
-              <label>Name*</label>
-              <input is="iron-input" required auto-validate error-message="needs some text!">
-            </paper-input-container>
-            <paper-input-container>
-              <label>Email*</label>
-              <input is="iron-input" required auto-validate error-message="needs some text!">
-            </paper-input-container>
-            <paper-input-container>
-              <label>Phone*</label>
-              <input is="iron-input" required auto-validate error-message="needs some text!">
-            </paper-input-container>
-              <paper-input-container>
-              <label>Company</label>
-              <input is="iron-input" required auto-validate error-message="needs some text!">
-            </paper-input-container>
-              <paper-input-container>
-              <label>Website</label>
-              <input is="iron-input" required auto-validate error-message="needs some text!">
-            </paper-input-container>
-              <paper-input-container>
-              <label>Country</label>
-              <input is="iron-input" required auto-validate error-message="needs some text!">
-            </paper-input-container>
-
-            <div id="requestbutton">
-              <div id="reqbut">
-                <paper-button raised>Request a Demo</paper-button>
-              </div>
-            </div>
-
-          </paper-material>
-
-          </div>
-
-          <div class="contactboxes">
-            <div id="value">
-              <h2>Find Out How to Make the Web Simple</h2>
-              <p>Don't teach people to use the Web make the Web Simple for People</p>
-              <p>Some will come back to you with a time that suits you to show and talk to you about how we can make the web simple for you, your clients or your loved ones</p>
-            </div>
-          </div>
           
-        </div>
+          <paper-toolbar class="medium">
+            <div title>
+              <h1>Get A Quote</h1>
+            </div>
+            <iron-icon icon="accessibility"></iron-icon>
+          </paper-toolbar>
 
-        </paper-material>
-      </div>
+          <div id="contactandvalue">
+
+            <div class="contactboxes">
+              <div id="contact">
+
+                <paper-material elevation="1">
+
+                  <paper-toolbar>
+                    <div title>
+                      <h2>Get a Quote</h2>
+                    </div>
+                  </paper-toolbar>
+
+                  <paper-input-container>
+                    <label>Name*</label>
+                    <input is="iron-input" required auto-validate error-message="needs some text!">
+                  </paper-input-container>
+                  <paper-input-container>
+                    <label>Email*</label>
+                    <input is="iron-input" required auto-validate error-message="needs some text!">
+                  </paper-input-container>
+                  <paper-input-container>
+                    <label>Phone*</label>
+                    <input is="iron-input" required auto-validate error-message="needs some text!">
+                  </paper-input-container>
+                    <paper-input-container>
+                    <label>Company</label>
+                    <input is="iron-input" required auto-validate error-message="needs some text!">
+                  </paper-input-container>
+                    <paper-input-container>
+                    <label>Website</label>
+                    <input is="iron-input" required auto-validate error-message="needs some text!">
+                  </paper-input-container>
+                    <paper-input-container>
+                    <label>Country</label>
+                    <input is="iron-input" required auto-validate error-message="needs some text!">
+                  </paper-input-container>
+
+                  <div id="requestbutton">
+                    <div id="reqbut">
+                      <paper-button raised>Get A Quote</paper-button>
+                    </div>
+                  </div>
+
+                </paper-material>
+              </div>
+
+            </div>
+
+            <div class="contactboxes">
+              <div id="value">
+                <h2>Find Out How to Make the Web Simple</h2>
+                <p>Don't teach people to use the Web make the Web Simple for People</p>
+                <p>Some will come back to you with a time that suits you to show and talk to you about how we can make the web simple for you, your clients or your loved ones</p>
+              </div>
+              <div id="cards">
+
+                <hi9-card 
+                  title="Laptop Basic" 
+                  barcolor="blue" 
+                  >
+                  <ul>
+                    <li>Chromebook</li>
+                    <li>MIFI/6Gb Data</li>
+                    <li>Phone/Online Support</li>
+                    <li>deko Platform</li>
+                    <li>Admin Panel</li>
+                    <h3>£250 ex VAT</h3>
+                  </ul>
+                
+                  
+                </hi9-card>
+
+                <hi9-card 
+                  title="Laptop Secure" 
+                  barcolor="blue" 
+                  >
+                  <ul>
+                    <li>Chromebook</li>
+                    <li>MIFI/6Gb Data</li>
+                    <li>Phone/Online Support</li>
+                    <li>deko Platform</li>
+                    <li>Admin Panel</li>
+                    <h3>£250 ex VAT</h3>
+                  </ul>
+
+                </hi9-card>
+
+                <hi9-card 
+                  title="Laptop Secure Mobile" 
+                  barcolor="blue" 
+                  >
+                  <ul>
+                    <li>Chromebook</li>
+                    <li>MIFI/6Gb Data</li>
+                    <li>Phone/Online Support</li>
+                    <li>deko Platform</li>
+                    <li>Admin Panel</li>
+                    <h3>£250 ex VAT</h3>
+                  </ul>
+
+                </hi9-card>
+
+                <hi9-card 
+                  title="Website Creation" 
+                  barcolor="blue" 
+                  >
+                  <ul>
+                    <li>Chromebook</li>
+                    <li>MIFI/6Gb Data</li>
+                    <li>Phone/Online Support</li>
+                    <li>deko Platform</li>
+                    <li>Admin Panel</li>
+                    <h3>£250 ex VAT</h3>
+                  </ul>
+
+                </hi9-card>
+
+                <hi9-card 
+                  title="Bot Design" 
+                  barcolor="blue" 
+                  >
+                  <ul>
+                    <li>Chromebook</li>
+                    <li>MIFI/6Gb Data</li>
+                    <li>Phone/Online Support</li>
+                    <li>deko Platform</li>
+                    <li>Admin Panel</li>
+                    <h3>£250 ex VAT</h3>
+                  </ul>
+
+                </hi9-card>
+                  </div>
+                  
+              </div>
+
+             </paper-material>
+            </div>
+          </div>
 
   </template>
 

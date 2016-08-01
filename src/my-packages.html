@@ -43,7 +43,7 @@
       paper-toolbar {
         background-color: #6e6c79;
       }
-      iron-icon {
+      paper-toolbar iron-icon {
         width: 40px;
         height: 40px;
         position: absolute;
@@ -56,6 +56,16 @@
         color: #fff;
         background-color: red;
       }
+      #cards {
+        display: block;
+        text-align: center;
+      }
+      ul {
+        text-align: left;
+      }
+      h3 {
+        line-height: 1;
+      }
     </style>
 
     <div class="card">
@@ -66,16 +76,89 @@
           <h1>Packages</h1>
         </div>
         <iron-icon icon="account-circle"></iron-icon>
-      </paper-toolbar>
-    <hi9-card 
-      title="Mobile Plus" 
-      barcolor="blue" 
-      link="/organisation"
-      >
-      
-      This is some text
 
-    </hi9-card>
+      </paper-toolbar>
+    
+      <div id="cards">
+
+        <hi9-card 
+          title="Mobile Plus" 
+          barcolor="blue" 
+          >
+          <ul>
+            <li>Chromebook</li>
+            <li>MIFI/6Gb Data</li>
+            <li>Phone/Online Support</li>
+            <li>deko Platform</li>
+            <li>Admin Panel</li>
+            <h3>£250 ex VAT</h3>
+          </ul>
+          
+          <a href="#">
+            <paper-button raised><iron-icon icon="shopping-cart"></iron-icon>Order</paper-button>
+          </a>
+          
+        </hi9-card>
+
+        <hi9-card 
+          title="Mobile Plus" 
+          barcolor="blue" 
+          >
+          <ul>
+            <li>Chromebook</li>
+            <li>MIFI/6Gb Data</li>
+            <li>Phone/Online Support</li>
+            <li>deko Platform</li>
+            <li>Admin Panel</li>
+            <h3>£250 ex VAT</h3>
+          </ul>
+
+          <a href="#">
+            <paper-button raised><iron-icon icon="shopping-cart"></iron-icon>Order</paper-button>
+          </a>
+
+        </hi9-card>
+
+        <hi9-card 
+          title="Mobile Plus" 
+          barcolor="blue" 
+          >
+          <ul>
+            <li>Chromebook</li>
+            <li>MIFI/6Gb Data</li>
+            <li>Phone/Online Support</li>
+            <li>deko Platform</li>
+            <li>Admin Panel</li>
+            <h3>£250 ex VAT</h3>
+          </ul>
+
+          <a href="#">
+            <paper-button raised><iron-icon icon="shopping-cart"></iron-icon>Order</paper-button>
+          </a>
+
+        </hi9-card>
+
+        <hi9-card 
+          title="Mobile Plus" 
+          barcolor="blue" 
+          >
+          <ul>
+            <li>Chromebook</li>
+            <li>MIFI/6Gb Data</li>
+            <li>Phone/Online Support</li>
+            <li>deko Platform</li>
+            <li>Admin Panel</li>
+            <h3>£250 ex VAT</h3>
+          </ul>
+
+          <a href="#">
+            <paper-button raised><iron-icon icon="shopping-cart"></iron-icon>Order</paper-button>
+          </a>
+
+        </hi9-card>
+
+      </div>
+
     </div>
 
   </template>

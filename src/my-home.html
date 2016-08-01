@@ -1,4 +1,4 @@
-<!--<link rel="import" href="../bower_components/polymer/polymer.html">-->
+<link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/app-layout/app-scroll-effects/effects/parallax-background.html">
 <link rel="import" href="../bower_components/app-layout/app-box/app-box.html">
 <link rel="import" href="../bower_components/app-layout/demo/sample-content.html">
@@ -8,10 +8,8 @@
 <link rel="import" href="../bower_components/paper-material/paper-material.html">
 <link rel="import" href="../bower_components/paper-toolbar/paper-toolbar.html">
 <link rel="import" href="../bower_components/iron-image/iron-image.html">
+<link rel="import" href="hi9-card.html">
 
-
-
-<dom-module id="my-home">
 <dom-module id="my-home">
 
   <template>
@@ -53,6 +51,7 @@
     }
     .first {
       --app-box-background-front-layer: {
+        background-image: url(/images/person.jpeg);
         padding-bottom: 120px;
         margin-top: -40px;
         height: 100%;
@@ -62,9 +61,13 @@
     .first article {
         background: none;
         padding: 30px 0px 0px 0px;
+        background-color: #333;
+        opacity: 0.9;
+        padding: 25px 0px 1px 0px;
+        margin-bottom: 30px;
     }
     .first #h2box {
-      margin: 0px 10px 35px 10px;
+      margin: 15px 10px 60px 10px;
     }
     paper-button {
         color: #fff;
@@ -117,12 +120,13 @@
     }
     article {
       text-align: center;
-      /*padding: 0px;*/
+      padding: 20px;
       background: linear-gradient(
       rgba(0, 0, 0, 0.6), 
       rgba(0, 0, 0, 0.6)
     )
     }
+
     h2 {
       font-weight: 100;
       font-size: 30px;
@@ -155,9 +159,19 @@
       width: 200px;
       height: 190px;
     }
+    a {
+      text-decoration: none;
+    }
+    hi9-card iron-icon {
+      height: 150px;
+      width: 150px;
+    }
 
   </style>
+
+
 </head>
+
 <body class="fullbleed" unresolved>
 
   <section>
@@ -167,45 +181,40 @@
         <div id="h2box">
           <h2>Don't Teach People to Use the Web. Make the Web Simple for People</h2>       
           <h2>Hardware | Software | Support | Services</h2> 
-        </div>        
-        <paper-button raised>Browse Packages</paper-button>     
+        </div>            
       </article>
       <div id="buttons">
-        <a href="/organisation">
-          <paper-material elevation="1">
-            <paper-toolbar style="background-color: #c40121">
-                <iron-icon icon="folder-shared"></iron-icon>
-                <div title>
-                  <h3>Organisations</h3>
-                </div>
-            </paper-toolbar>          
-            <iron-image src="../images/card/organisation-smaller.jpg" preload sizing="cover"></iron-image>         
-          </paper-material>
-        </a>
-        <a href="/families">
-          <paper-material elevation="1">
-            <paper-toolbar style="background-color: #AA3964">
-                <iron-icon icon="supervisor-account"></iron-icon>
-                <div title>
-                  <h3>Families</h3>
-                </div>
-            </paper-toolbar>
-            <iron-image src="../images/sections/Families.jpg" preload sizing="cover"></iron-image>
-          </paper-material>
-        </a>
-        <a href="/individuals">
-          <paper-material elevation="1">
-            <paper-toolbar style="background-color: #03B5A0">
-                <iron-icon icon="account-circle"></iron-icon>
-                <div title>
-                  <h3>Individuals</h3>
-                </div>
-            </paper-toolbar>
-            <iron-image src="../images/sections/Individual.jpg" preload sizing="cover"></iron-image>
-          </paper-material>
-        </a>
 
-      
+        <hi9-card 
+          title="Organisations" 
+          barcolor="#c40121" 
+          >
+          <iron-icon icon="folder-shared" style="color: #c40121"></iron-icon>     
+          <a href="/organisation">
+            <paper-button raised>Browse Packages & Get a Quote</paper-button>
+          </a> 
+        </hi9-card>
+
+        <hi9-card 
+          title="Families" 
+          barcolor="#AA3964" 
+          >
+          <iron-icon icon="supervisor-account" style="color: #AA3964"></iron-icon>     
+          <a href="/families">
+            <paper-button raised>Browse Packages & Get a Quote</paper-button>
+          </a> 
+        </hi9-card>
+
+        <hi9-card 
+          title="Individuals" 
+          barcolor="#03B5A0" 
+          >
+          <iron-icon icon="account-circle" style="color: #03B5A0"></iron-icon>     
+          <a href="/individuals">
+            <paper-button raised>Browse Packages & Get a Quote</paper-button>
+          </a> 
+        </hi9-card>
+
       </div>
     </app-box>
   </section>
@@ -237,8 +246,7 @@
    <section>
     <article>
       <h2>For Work</h2>
-      <p>Organise and share for co workers sites they should visit. Host and event and share information to the attendees quickly and easily. 
-</p>
+      <p>Organise and share for co workers sites they should visit. Host and event and share information to the attendees quickly and easily. </p>
     </article>
     <app-box class="sixth" effects="parallax-background"></app-box>
   </section>
