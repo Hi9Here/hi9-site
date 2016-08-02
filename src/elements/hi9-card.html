@@ -1,10 +1,10 @@
-<link rel="import" href="../bower_components/polymer/polymer.html">
-<link rel="import" href="../bower_components/paper-button/paper-button.html">
-<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
-<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
-<link rel="import" href="../bower_components/paper-material/paper-material.html">
-<link rel="import" href="../bower_components/paper-toolbar/paper-toolbar.html">
-<link rel="import" href="../bower_components/iron-image/iron-image.html">
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../../bower_components/paper-material/paper-material.html">
+<link rel="import" href="../../bower_components/paper-toolbar/paper-toolbar.html">
+<link rel="import" href="../../bower_components/iron-image/iron-image.html">
 
 <dom-module id="hi9-card">
   <template>
@@ -43,7 +43,10 @@
         </div>
       </paper-toolbar>          
       <iron-image src="{{image}}" preload sizing="cover" style="display: {{imagedisplay}}": inline"></iron-image> 
-      <content></content>        
+      <content></content> 
+      <a href="{{buttonlink}}">
+        <paper-button raised style="display: {{buttondisplay}}">{{buttontitle}}</paper-button>
+      </a>        
     </paper-material>
   </a>
 
@@ -73,6 +76,9 @@
         type: String,
         value: 300
       },
+      buttondisplay: String,
+      buttonlink: String,
+      buttontitle: String
     }
     });
   </script>
