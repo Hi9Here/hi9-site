@@ -7,6 +7,7 @@
 <link rel="import" href="../bower_components/paper-material/paper-material.html">
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
 <link rel="import" href="hi9-card.html">
+<link rel="import" href="hi9-contact.html">
 
 <dom-module id="my-signup">
 
@@ -118,50 +119,8 @@
           <div id="contactandvalue">
 
             <div class="contactboxes">
-              <div id="contact">
 
-                <paper-material elevation="1">
-
-                  <paper-toolbar>
-                    <div title>
-                      <h2>Get a Quote</h2>
-                    </div>
-                  </paper-toolbar>
-
-                  <paper-input-container>
-                    <label>Name*</label>
-                    <input is="iron-input" required auto-validate error-message="needs some text!">
-                  </paper-input-container>
-                  <paper-input-container>
-                    <label>Email*</label>
-                    <input is="iron-input" required auto-validate error-message="needs some text!">
-                  </paper-input-container>
-                  <paper-input-container>
-                    <label>Phone*</label>
-                    <input is="iron-input" required auto-validate error-message="needs some text!">
-                  </paper-input-container>
-                    <paper-input-container>
-                    <label>Company</label>
-                    <input is="iron-input" required auto-validate error-message="needs some text!">
-                  </paper-input-container>
-                    <paper-input-container>
-                    <label>Website</label>
-                    <input is="iron-input" required auto-validate error-message="needs some text!">
-                  </paper-input-container>
-                    <paper-input-container>
-                    <label>Country</label>
-                    <input is="iron-input" required auto-validate error-message="needs some text!">
-                  </paper-input-container>
-
-                  <div id="requestbutton">
-                    <div id="reqbut">
-                      <paper-button raised>Get A Quote</paper-button>
-                    </div>
-                  </div>
-
-                </paper-material>
-              </div>
-
+              <hi9-contact></hi9-contact>
             </div>
 
             <div class="contactboxes">
