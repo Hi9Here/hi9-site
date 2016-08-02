@@ -1,10 +1,5 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
-<link rel="import" href="../bower_components/iron-image/iron-image.html">
-<link rel="import" href="../bower_components/paper-toolbar/paper-toolbar.html">
-<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
-<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
-<link rel="import" href="../bower_components/paper-button/paper-button.html">
-<link rel="import" href="hi9-contact.html">
+<link rel="import" href="hi9-customer-card.html">
 
 
 <dom-module id="my-organisation">
@@ -12,67 +7,44 @@
   <template>
 
     <style>
-      :host {
-        display: block;
-        padding: 10px;
-      }
-      .card {
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-        padding: 16px;
-        margin: 24px;
-        border-radius: 5px;
-        background-color: #fff;
-        display: block;
-        text-align: center;
-      }
-      h1 {
-        font-size: 22px;
-        margin: 16px 0;
-        color: #fff;
+      h2 {
         font-weight: 300;
       }
-      paper-toolbar {
-        background-color: #c40121;
+      h3 {
+        font-weight: 500;
       }
-      paper-toolbar iron-icon {
-        width: 40px;
-        height: 40px;
-        position: absolute;
-        right: 20px;
+      blockquote {
+        background: #f9f9f9;
+        border-left: 10px solid #ccc;
+        margin: 1.5em 10px;
+        padding: 0.5em 10px;
+        quotes: "\201C""\201D""\2018""\2019";
       }
-      a {
-        text-decoration: none;
+      blockquote:before {
+        color: #ccc;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
       }
-      paper-button {
-        color: #fff;
-        background-color: red;
+
+      blockquote p {
+        display: inline;
       }
-      #sell {
-        width: 45%;
-        display: inline-block;
-        text-align: left; 
-      }
+
     </style>
 
-    <div class="card">
+    <hi9-customer-card title="Organisation" color="#c40121">
+      <h2>Simplyfy the Web Don't Confuse the Users</h2>
+      <h3>Great Reputation</h3>
+      <blockquote>
+        Rupert: Google "We are Amazing"
+      </blockquote>
+      <h3>Incredible Results</h3>
+      <h4>Over 70% of Users Stay Online</h4>
       
-      <paper-toolbar class="medium">
-        <div title>     
-          <h1>Organisation</h1>
-        </div>
-        <iron-icon icon="folder-shared"></iron-icon>
-      </paper-toolbar>
-
-      <div id="sell">
-        <p>As an organisation, your job is to care for & to create opportunities for your customers. Hi9’s job is to make that process simpler.</p>
-        <p>Being digitally included is now a priority but sadly the most in need, those on low income, the elderly, disabled & vulnerable, are not connected. Our mission is to provide all organisation’s with cost effective, intelligent solutions not only when it comes to hardware but also software.</p>
-        <p>Our current digital bundles include a 11” or 14” Chromebook, a MiFi with Data SIM & an optional Yubikey for that extra bit of security. Each of these items have been carefully selected to make getting connected as easy as possible.</p>
-        The Chromebook is browser only, no updates, no security programmes to worry about plus there are other added extras like voice activation, ideal for anyone with poor eyesight or an inability to type. The MiFi & Data SIM means the user can keep control of costs - no contract, no unexpected bills, while the Yubikey ramps up security + offers a one password option.</p>
-      </div>
-
-      <hi9-contact customer="Organisation"></hi9-contact>
-
-    </div>
+    </hi9-customer-card>
 
   </template>
 
