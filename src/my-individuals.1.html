@@ -1,0 +1,102 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-image/iron-image.html">
+<link rel="import" href="../bower_components/paper-toolbar/paper-toolbar.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="cards/hi9-chromebook-card-small.html">
+<link rel="import" href="cards/hi9-yubikey-card-small.html">
+<link rel="import" href="cards/hi9-button-card-small.html">
+<link rel="import" href="cards/hi9-support-card-small.html">
+
+<dom-module id="my-individuals">
+
+  <template>
+
+    <style>
+      :host {
+        display: block;
+        padding: 10px;
+      }
+      .card {
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        margin: 24px;
+        border-radius: 5px;
+        background-color: #fff;
+        color: #757575;
+      }
+      .circle {
+        display: inline-block;
+        height: 64px;
+        width: 64px;
+        border-radius: 50%;
+        background: #ddd;
+        line-height: 64px;
+        font-size: 30px;
+        color: #555;
+        text-align: center;
+      }
+      h1 {
+        font-size: 22px;
+        margin: 16px 0;
+        color: #fff;
+        font-weight: 300;
+      }
+      paper-toolbar {
+        background-color: #03B5A0;
+      }
+      paper-toolbar iron-icon {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 20px;
+      }
+      a {
+        text-decoration: none;
+      }
+      paper-button {
+        color: #fff;
+        background-color: red;
+      }
+    </style>
+
+    <div class="card">
+      
+      <paper-toolbar class="medium">
+        <div title>     
+          <h1>Individuals</h1>
+        </div>
+        <iron-icon icon="account-circle"></iron-icon>
+      </paper-toolbar>
+
+      <p>Whether you’re connected or not - take a look at our amazingly priced hardware solutions that come with super friendly customer support. And, no matter what your digital skills, why not sign up to start using our software solution, deko, which will be avaialble soon.</p>
+      <p>With decko you can create your own library of weblinks clearly displayed as cards which you can group together any way you want into decks. This won't just keep you organised but also let you share useful info., personal favourites & more with friends & family. Excited?</p>
+
+    <a href="/signup">
+      <paper-button raised><iron-icon icon="assignment"></iron-icon>Sign Up</paper-button>
+    </a>
+
+    </div>
+
+    <hi9-chromebook-card-small></hi9-chromebook-card-small>
+    <hi9-yubikey-card-small></hi9-yubikey-card-small>
+    <hi9-button-card-small></hi9-button-card-small>
+    <hi9-support-card-small></hi9-support-card-small>
+    
+
+    </hi9-customer-card>
+
+  </template>
+
+  <script>
+
+    Polymer({
+
+      is: 'my-individuals'
+
+    });
+
+  </script>
+
+</dom-module>
