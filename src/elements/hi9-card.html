@@ -12,20 +12,20 @@
     <style>
       :host {
         display: inline-block;
-        margin: 10px;
+        margin: 5px;
         text-align: center;
       }
       iron-icon {
       margin: 5px;
       }
     iron-image {
-      width: 200px;
-      height: 190px;
+      width: 130px;
+      height: 100px;
       }
     paper-material {
       display: inline-block;
       background-color: #fff;
-      padding: 16px;
+      padding: 10px;
       border-radius: 5px;
       color: #757575;
     }
@@ -38,6 +38,7 @@
     paper-button {
         color: #fff;
         background-color: red;
+        font-size: 14px;
       }
 
       
@@ -53,7 +54,7 @@
       </paper-toolbar>          
       <iron-image src="{{image}}" preload sizing="cover" style="display: {{imagedisplay}}": inline"></iron-image> 
       <content></content> 
-        <paper-button raised style="display: {{buttondisplay}}">{{buttontitle}}</paper-button>      
+      <paper-button raised style="display: {{buttondisplay}}">{{buttontitle}}</paper-button>      
     </paper-material>
   </a>
 
@@ -77,11 +78,11 @@
       link: String,
       width: {
         type: String,
-        value: 200
+        value: 130
       },
       height: {
         type: String,
-        value: 300
+        value: 200
       },
       buttondisplay: String,
       buttonlink: String,
