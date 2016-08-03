@@ -5,6 +5,7 @@
 <link rel="import" href="../../bower_components/paper-material/paper-material.html">
 <link rel="import" href="../../bower_components/paper-toolbar/paper-toolbar.html">
 <link rel="import" href="../../bower_components/iron-image/iron-image.html">
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
 
 <dom-module id="hi9-card">
   <template>
@@ -12,6 +13,7 @@
       :host {
         display: inline-block;
         margin: 10px;
+        text-align: center;
       }
       iron-icon {
       margin: 5px;
@@ -30,6 +32,13 @@
     h3 {
       font-weight: 300;
     }
+    a {
+      text-decoration: none;
+    }
+    paper-button {
+        color: #fff;
+        background-color: red;
+      }
 
       
     </style>
@@ -44,9 +53,7 @@
       </paper-toolbar>          
       <iron-image src="{{image}}" preload sizing="cover" style="display: {{imagedisplay}}": inline"></iron-image> 
       <content></content> 
-      <a href="{{buttonlink}}">
-        <paper-button raised style="display: {{buttondisplay}}">{{buttontitle}}</paper-button>
-      </a>        
+        <paper-button raised style="display: {{buttondisplay}}">{{buttontitle}}</paper-button>      
     </paper-material>
   </a>
 
