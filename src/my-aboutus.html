@@ -1,26 +1,78 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="elements/hi9-customer-card.html">
+<link rel="import" href="cards/hi9-chromebook-card-small.html">
+<link rel="import" href="elements/hi9-card.html">
+<link rel="import" href="cards/hi9-mifi-card-small.html">
+<link rel="import" href="cards/hi9-yubikey-card-small.html">
+<link rel="import" href="cards/hi9-button-card-small.html">
+<link rel="import" href="cards/hi9-support-card-small.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<dom-module id="my-aboutus">
+
+  <template>
+
+    <style>
+      h2 {
+        font-weight: 300;
+        margin: 0;
+      }
+      h3 {
+        font-weight: 500;
+        margin: 0;
+      }
+      #sells {
+        display: block;
+        float: left;
+        width: 100%;
+      }
+      #nos iron-icon {
+        color: red;
+      }
+      #yeses iron-icon {
+        color: green;
+      }
+      .options {
+        display: inline;
+        float: left;
+        margin: 10px;
+        line-height: 1.5;
+      }
 
 
+    </style>
 
-    <div class="card">
-       <paper-toolbar class="medium">
-        <div title>     
-          <h1>About Us</h1>
+    <hi9-customer-card title="About Us" color="#c40121">
+      <div id="sells">
+        <h2>The Perfect Digital Package</h2> 
+          <div id="nos" class="options">
+            <h3><iron-icon icon="clear"></iron-icon>Nothing to Install</h3>
+            <h3><iron-icon icon="clear"></iron-icon>No Anti Virus Software</h3>
+            <h3><iron-icon icon="clear"></iron-icon>No Annoying Updates</h3>
+          </div>
+          <div id="yeses" class="options">
+            <h3><iron-icon icon="check"></iron-icon>Voice Activation</h3>
+            <h3><iron-icon icon="check"></iron-icon>Complete Security</h3>
+            <h3><iron-icon icon="check"></iron-icon>Customer Support</h3>
+          </div>
         </div>
-        <iron-icon icon="account-circle"></iron-icon>
-      </paper-toolbar>
 
-      <p>Hi9's' a rapidly growing tech startup based in beautiful Cornwall.</p>
+      <div id="text">
+       <p>Hi9's' a rapidly growing tech startup based in beautiful Cornwall.</p>
       <p>Founded in 2014, our company mission was simple; to provide affordable computers directly or via an organisation to those that needed them the most whether on low income, disabled, vulnerable or socially excluded.</p>
       <p>We're proud to say our ideas earned us a place on the Google Launchpad programme which has provided us with a huge amount of help, advice and support in development.</p>
       <p>But it wasn't long into the project that we discovered another challenge - to make the web itself simple to use. Our ideas? To make organising websites easy but most importantly easy to share with friends, family or colleagues. This was when deko was first dreamt up.</p>
               <p>Now deko is in development and on completion will be added to our didital bundles alongside our selection of hardware products and customer service or offered as a standalone product. To find out more:</p>                       
-    <a href="/signup">
-      <paper-button raised><iron-icon icon="assignment"></iron-icon>Sign up</paper-button>
-    </a>
-    
-    <p>Or visit us on Crowdcube and make an investment in Cornwall's most exciting tech startup.</p>
-    
-    </div>
+ 
+      </div>
+
+      <hi9-chromebook-card-small></hi9-chromebook-card-small>
+      <hi9-mifi-card-small></hi9-mifi-card-small>
+      <hi9-yubikey-card-small></hi9-yubikey-card-small>
+      <hi9-button-card-small></hi9-button-card-small>
+      <hi9-support-card-small></hi9-support-card-small>
+
+    </hi9-customer-card>
 
   </template>
 
