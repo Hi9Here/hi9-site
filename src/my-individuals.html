@@ -11,21 +11,76 @@
   <template>
 
     <style>
-      h2 {
+          h2 {
         font-weight: 300;
+        margin-bottom: 0px;
       }
       h3 {
         font-weight: 500;
+        margin: 0;
+      }
+      #sells {
+        display: block;
+        float: left;
+        width: 100%;
+      }
+      #nos iron-icon {
+        color: red;
+      }
+      #yeses iron-icon {
+        color: green;
+      }
+      .options {
+        display: inline;
+        float: left;
+        margin: 10px;
+        line-height: 2;
+      }
+      #top {
+        float: left;
+        height: 230px;
+        width: 80%;
+      }
+      #ctacard {
+        float: right;
+        width: 20%;
+        padding-top: 10px;
+        height: 220px;
+      } 
+      #text {
+        margin-top: 10px;
+        float: left;
       }
 
     </style>
 
     <hi9-customer-card title="Individuals" color="#c40121">
-      
-      <h2>Making The Web Made Simple for You</h2>
+
+    <div id="top">
+      <h2>Making The Web Made Simple for You</h2> 
+      <div id="tldr">
+        <div id="sells">
+            <div id="nos" class="options">
+              <h3><iron-icon icon="clear"></iron-icon>Nothing to Install</h3>
+              <h3><iron-icon icon="clear"></iron-icon>No Anti Virus Software</h3>
+              <h3><iron-icon icon="clear"></iron-icon>No Annoying Updates</h3>
+            </div>
+            <div id="yeses" class="options">
+              <h3><iron-icon icon="check"></iron-icon>Voice Activation</h3>
+              <h3><iron-icon icon="check"></iron-icon>Complete Security</h3>
+              <h3><iron-icon icon="check"></iron-icon>Customer Support</h3>
+            </div>
+          </div>      
+      </div>
+    </div>
+      <div id="ctacard">
+        <hi9-quote-card-small></hi9-quote-card-small>
+      </div>
     
-      <p>Whether you’re connected or not - take a look at our amazingly priced hardware packages that come with super friendly customer support. And, no matter what your digital skills, why not sign up to start using our software solution deko, avaialble soon.</p>
-      <p>With decko you can create your own library of weblinks clearly displayed as cards which you can group together any way you want into decks. This won't just keep you organised but also let you share useful info., personal favourites & more with friends & family. Excited?</p>
+      <div id="text">
+        <p>Whether you’re connected or not - take a look at our amazingly priced hardware packages that come with super friendly customer support. And, no matter what your digital skills, why not sign up to start using our software solution deko, avaialble soon.</p>
+        <p>With decko you can create your own library of weblinks clearly displayed as cards which you can group together any way you want into decks. This won't just keep you organised but also let you share useful info., personal favourites & more with friends & family. Excited?</p>
+      </div>
 
 
       <hi9-chromebook-card-small></hi9-chromebook-card-small>
