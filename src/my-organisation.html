@@ -6,6 +6,8 @@
 <link rel="import" href="cards/hi9-yubikey-card-small.html">
 <link rel="import" href="cards/hi9-button-card-small.html">
 <link rel="import" href="cards/hi9-support-card-small.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
 <dom-module id="my-organisation">
 
   <template>
@@ -17,15 +19,40 @@
       h3 {
         font-weight: 500;
       }
+      #sells {
+        display: block;
+        float: left;
+        width: 100%;
+      }
+      #nos iron-icon {
+        color: red;
+      }
+      #yeses iron-icon {
+        color: green;
+      }
+      .options {
+        display: inline;
+        float: left;
+        margin: 10px;
+      }
+
 
     </style>
 
     <hi9-customer-card title="Organisation" color="#c40121">
-      
-      <h2>Simplyfy the Web, Don't Confuse Your Users</h2>
-        <p>Nothing to Install</p>
-        <p>No Anti Virus Software</p>
-        <p>No Annoying Updates</p>
+      <h2>Digital Packages Contain</h2> 
+      <div id="sells">
+        <div id="nos" class="options">
+          <h3><iron-icon icon="clear"></iron-icon>Nothing to Install</h3>
+          <h3><iron-icon icon="clear"></iron-icon>No Anti Virus Software</h3>
+          <h3><iron-icon icon="clear"></iron-icon>Annoying Updates</h3>
+        </div>
+        <div id="yeses" class="options">
+          <h3><iron-icon icon="check"></iron-icon>Nothing to Install</h3>
+          <h3><iron-icon icon="check"></iron-icon>No Anti Virus Software</h3>
+          <h3><iron-icon icon="check"></iron-icon>Annoying Updates</h3>
+        </div>
+      </div>
 
       <hi9-chromebook-card-small></hi9-chromebook-card-small>
       <hi9-mifi-card-small></hi9-mifi-card-small>
