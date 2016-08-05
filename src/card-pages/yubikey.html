@@ -1,0 +1,94 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="elements/hi9-customer-card.html">
+<link rel="import" href="cards/hi9-chromebook-card-small.html">
+<link rel="import" href="elements/hi9-card.html">
+<link rel="import" href="cards/hi9-mifi-card-small.html">
+<link rel="import" href="cards/hi9-yubikey-card-small.html">
+<link rel="import" href="cards/hi9-support-card-small.html">
+<dom-module id="my-families">
+
+  <template>
+
+       <style>
+      h2 {
+        font-weight: 300;
+        margin-bottom: 0px;
+      }
+      h3 {
+        font-weight: 500;
+        margin: 0;
+      }
+      #sells {
+        display: block;
+        float: left;
+        width: 100%;
+      }
+      #nos iron-icon {
+        color: red;
+      }
+      #yeses iron-icon {
+        color: green;
+      }
+      .options {
+        display: inline;
+        float: left;
+        margin: 10px;
+        line-height: 2;
+      }
+      #top {
+        float: left;
+        height: 230px;
+        width: 80%;
+      }
+      #ctacard {
+        float: right;
+        width: 20%;
+        padding-top: 10px;
+        height: 220px;
+      } 
+      #text {
+        margin-top: 10px;
+        float: left;
+      }
+
+    </style>
+
+    <hi9-customer-card title="Families" color="#AA3964" icon="social:people">
+
+      <div id="top">
+        <h2>A Simple, Safe Answer For All Your Family</h2> 
+        <div id="tldr">
+          <h3><p>You choose the sites, we present them simply with awesome customer support. No more unsuitable or confusing content, reduced online fraud. </p>
+          <p>Plus, make savings by buying a multi-user Chromebook</p><h3>
+        </div>
+      </div>
+      <div id="ctacard">
+        <hi9-quote-card-small></hi9-quote-card-small>
+      </div>
+      
+      <div id="text">
+          <p>Don’t want to be your parents tech support anymore? Fed-up looking over your kids shoulder? Then here’s what to do.</p>
+        <p>Hi9 hardware is super secure & super simple to set up plus it’s utterly affordable. The Chromebook laptop is browser only, so no nasty updates, no security programmes; it’s all done for you. It also has voice activation, great for the elderly or visually impaired & fab for the young ones.All our pacakages come with super-friendly telephone & online customer support.</p>
+        <p>But it doesn’t stop there.<p/>
+        <p>Hi9 is currently developing deko - a platform that can organise all your family’s favourite sites into a shareable library. This allows parents to choose specific sites their kids can access which keeps them safe, while content for an elderly relative can be restricted so removing any need for confusing searches plus reducing the risks of fraud.</P>
+      </div>
+      
+      <hi9-chromebook-card-small></hi9-chromebook-card-small>
+      <hi9-yubikey-card-small></hi9-yubikey-card-small>
+      <hi9-support-card-small></hi9-support-card-small>
+
+    </hi9-customer-card>
+
+  </template>
+
+  <script>
+
+    Polymer({
+
+      is: 'my-families'
+
+    });
+
+  </script>
+
+</dom-module>
