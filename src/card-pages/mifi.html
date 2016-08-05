@@ -1,0 +1,92 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="elements/hi9-customer-card.html">
+<link rel="import" href="cards/hi9-chromebook-card-small.html">
+<link rel="import" href="elements/hi9-card.html">
+<link rel="import" href="cards/hi9-mifi-card-small.html">
+<link rel="import" href="cards/hi9-yubikey-card-small.html">
+<link rel="import" href="cards/hi9-button-card-small.html">
+<link rel="import" href="cards/hi9-angel-card-small.html">
+<dom-module id="mifi">
+
+  <template>
+
+    <style>
+          h2 {
+        font-weight: 300;
+        margin-bottom: 0px;
+      }
+      h3 {
+        font-weight: 500;
+        margin: 0;
+      }
+      #sells {
+        display: block;
+        float: left;
+        width: 100%;
+      }
+      #nos iron-icon {
+        color: red;
+      }
+      #yeses iron-icon {
+        color: green;
+      }
+      .options {
+        display: inline;
+        float: left;
+        margin: 10px;
+        line-height: 2;
+      }
+      #top {
+        float: left;
+        height: 230px;
+        width: 80%;
+      }
+      #ctacard {
+        float: right;
+        width: 20%;
+        padding-top: 10px;
+        height: 220px;
+      } 
+      #text {
+        margin-top: 10px;
+        float: left;
+      }
+
+    </style>
+
+    <hi9-customer-card title="Connection" color="#6c6c79" icon="work"></iron-icon>
+
+    <div id="top">
+      <h2>Making The Web Made Simple for You</h2> 
+      <div id="tldr">
+        
+      </div>
+    </div>
+      <div id="ctacard">
+      </div>
+      <hi9-angel-card-small></hi9-angel-card-small>
+
+      <div id="text">
+         <p>HI9 is a fast growth Cornish tech. startup supported & endorsed by Google & working in partnership with major companies including Carphone Warehouse, Asus & Acer. Currently in talks with venture capitalists we're looking for further funding to develop deko - a relovutionary & diverse software solution that makes the web simple.</p> 
+         <p>If, like Google you share our vision, want to be a part of this exciting project & want to make an investment then Contact Us today.</p>
+      <p>But you don't have to be a VC or Angel to make an investment - deko is being built for everyone everywhere, so anyone anywhere can be a part of the journey & help change lives across the globe.</p>
+      <p>Currently we’re finalising our Crowdcube profile so sign up now & keep up to date!</p>
+
+      </div>
+
+
+    </hi9-customer-card>
+
+  </template>
+
+  <script>
+
+    Polymer({
+
+      is: 'mifi'
+
+    });
+
+  </script>
+
+</dom-module>
