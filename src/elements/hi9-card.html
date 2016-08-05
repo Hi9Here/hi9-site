@@ -56,7 +56,7 @@
           <h3>{{title}}</h3>
         </div>
       </paper-toolbar>          
-      <iron-image src="{{image}}" preload sizing="cover" style="display: {{imagedisplay}}"></iron-image> 
+      <iron-image src="{{image}}" preload sizing="{{imagesizing}}" style="display: {{imagedisplay}}"></iron-image> 
       <content></content> 
       <paper-button raised style="display: {{buttondisplay}}">{{buttontitle}}</paper-button>      
     </paper-material>
@@ -73,6 +73,10 @@
       icondisplay : {
         type: String,
         value: "none"
+      },
+      imagesizing: {
+        type: String,
+        value: "cover"
       },
       image: String,
       imagedisplay: {
