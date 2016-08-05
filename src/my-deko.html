@@ -4,14 +4,17 @@
 <link rel="import" href="elements/hi9-card.html">
 <link rel="import" href="cards/hi9-mifi-card-small.html">
 <link rel="import" href="cards/hi9-security-card-small.html">
-<link rel="import" href="cards/hi9-button-card-small.html">
 <link rel="import" href="cards/hi9-support-card-small.html">
-<dom-module id="my-individuals">
+<link rel="import" href="cards/hi9-deko-card-small.html">
+<link rel="import" href="elements/hi9-quote-card-small.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<dom-module id="my-deko">
 
   <template>
 
     <style>
-          h2 {
+      h2 {
         font-weight: 300;
         margin-bottom: 0px;
       }
@@ -54,13 +57,13 @@
 
     </style>
 
-    <hi9-customer-card title="Individuals" color="#03B5A0" icon="account-circle"></iron-icon>
+    <hi9-customer-card title="Deko" color="#c40121" icon="folder-shared"></iron-icon>
+    
 
     <div id="top">
-      <h2>The Web Made Simple at An Amazing Price</h2> 
+      <h2>The Perfect Digital Package</h2> 
       <div id="tldr">
-        <h3><p>Amazing hardware, at fantastic prices + customer support.</P>
-        <p> The opportunity to sign up for deko - the software solution that makes the web simple</p><h3>        
+           
       </div>
     </div>
       <div id="ctacard">
@@ -68,12 +71,11 @@
       </div>
 
       <div id="text">
-        <p>Whether you’re connected or not - take a look at our amazingly priced hardware packages that come with super friendly customer support. And, no matter what your digital skills, why not sign up to start using our software solution deko, avaialble soon.</p>
-        <p>With decko you can create your own library of weblinks clearly displayed as cards which you can group together any way you want into decks. This won't just keep you organised but also let you share useful info., personal favourites & more with friends & family. Excited?</p>
+       
       </div>
 
-
       <hi9-chromebook-card-small></hi9-chromebook-card-small>
+      <hi9-mifi-card-small></hi9-mifi-card-small>
       <hi9-security-card-small></hi9-security-card-small>
       <hi9-support-card-small></hi9-support-card-small>
 
@@ -85,7 +87,7 @@
 
     Polymer({
 
-      is: 'my-individuals'
+      is: 'my-deko'
 
     });
 
