@@ -50,13 +50,13 @@
     
    <a href="{{link}}">
     <paper-material elevation="1" style="width: {{width}}px; height: {{height}}px;">
-      <paper-toolbar style="background-color: {{barcolor}}">
+      <paper-toolbar style="background-color: {{barcolor}}; display: {{toolbardisplay}}">
         <iron-icon icon="{{icon}}" style="display: {{icondisplay}}"></iron-icon>
         <div title>
           <h3>{{title}}</h3>
         </div>
       </paper-toolbar>          
-      <iron-image src="{{image}}" preload sizing="{{imagesizing}}" style="display: {{imagedisplay}}"></iron-image> 
+      <iron-image src="{{image}}" preload sizing="{{imagesizing}}" style="display: {{imagedisplay}}; width:{{imagewidth}}px; height:{{imageheight}};"></iron-image> 
       <content></content> 
       <paper-button raised style="display: {{buttondisplay}}">{{buttontitle}}</paper-button>      
     </paper-material>
@@ -74,6 +74,10 @@
         type: String,
         value: "none"
       },
+      toolbardisplay: {
+        type: String,
+        value: ""
+      },
       imagesizing: {
         type: String,
         value: "cover"
@@ -83,6 +87,8 @@
         type: String,
         value: "none"
       },
+      imageheight: String,
+      imagewidth: String,
       link: String,
       width: {
         type: String,
