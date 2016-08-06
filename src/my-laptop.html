@@ -9,51 +9,14 @@
 <link rel="import" href="elements/hi9-quote-card-small.html">
 <link rel="import" href="../bower_components/iron-icon/iron-icon.html">
 <link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+
 <dom-module id="my-laptop">
+
+  <link rel=import type="css" href="styles/my-page-style.css">
 
   <template>
 
     <style>
-      h2 {
-        font-weight: 300;
-        margin-bottom: 0px;
-      }
-      h3 {
-        font-weight: 500;
-        margin: 0;
-      }
-      #sells {
-        display: block;
-        float: left;
-        width: 100%;
-      }
-      #nos iron-icon {
-        color: red;
-      }
-      #yeses iron-icon {
-        color: green;
-      }
-      .options {
-        display: inline;
-        float: left;
-        margin: 10px;
-        line-height: 2;
-      }
-      #top {
-        float: left;
-        height: 230px;
-        width: 80%;
-      }
-      #ctacard {
-        float: right;
-        width: 20%;
-        padding-top: 10px;
-        height: 220px;
-      } 
-      #text {
-        margin-top: 10px;
-        float: left;
-      }
 
     </style>
 
@@ -75,16 +38,15 @@
         <p>The Google Chromebook is a browser only laptop; but what does that mean? Well, firstly there’s nothing to install so all you have to do is switch on & login with a gmail account. Add to that there are no frustrating updates to slow you down & no costly confusing security programmes to worry about.</p>
 
         <p>Other features like voice activation make it perfect for anyone with poor eyesight, typing issues or learning difficulties plus, take advantage of the free document & spreadsheet options courtesy of Google Drive. Finally, if you want to share your laptop with someone else there’s a multi-user option.</p>
-
-        <p>Other products that might interest you.</p>
-
- 
       </div>
 
-      <hi9-connection-card-small></hi9-connection-card-small>
-      <hi9-security-card-small></hi9-security-card-small>
-      <hi9-support-card-small></hi9-support-card-small>
-      <hi9-deko-card-small></hi9-deko-card-small>
+      <div id="smallcard">
+        <h3>Other Products That Might Interest You</h3>
+        <hi9-connection-card-small></hi9-connection-card-small>
+        <hi9-security-card-small></hi9-security-card-small>
+        <hi9-support-card-small></hi9-support-card-small>
+        <hi9-deko-card-small></hi9-deko-card-small>
+      </div>
 
     </hi9-customer-card>
 

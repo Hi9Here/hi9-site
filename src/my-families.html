@@ -5,51 +5,14 @@
 <link rel="import" href="cards/hi9-connection-card-small.html">
 <link rel="import" href="cards/hi9-security-card-small.html">
 <link rel="import" href="cards/hi9-support-card-small.html">
+
 <dom-module id="my-families">
+
+  <link rel=import type="css" href="styles/my-page-style.css">
 
   <template>
 
-       <style>
-      h2 {
-        font-weight: 300;
-        margin-bottom: 0px;
-      }
-      h3 {
-        font-weight: 500;
-        margin: 0;
-      }
-      #sells {
-        display: block;
-        float: left;
-        width: 100%;
-      }
-      #nos iron-icon {
-        color: red;
-      }
-      #yeses iron-icon {
-        color: green;
-      }
-      .options {
-        display: inline;
-        float: left;
-        margin: 10px;
-        line-height: 2;
-      }
-      #top {
-        float: left;
-        height: 230px;
-        width: 80%;
-      }
-      #ctacard {
-        float: right;
-        width: 20%;
-        padding-top: 10px;
-        height: 220px;
-      } 
-      #text {
-        margin-top: 10px;
-        float: left;
-      }
+    <style>
 
     </style>
 
@@ -73,9 +36,12 @@
         <p>Hi9 is currently developing deko - a platform that can organise all your family’s favourite sites into a shareable library. This allows parents to choose specific sites their kids can access which keeps them safe, while content for an elderly relative can be restricted so removing any need for confusing searches plus reducing the risks of fraud.</P>
       </div>
       
-      <hi9-chromebook-card-small></hi9-chromebook-card-small>
-      <hi9-security-card-small></hi9-security-card-small>
-      <hi9-support-card-small></hi9-support-card-small>
+      <div id="smallcard">
+        <h3>Other Products That Might Interest You.</h3>
+          <hi9-chromebook-card-small></hi9-chromebook-card-small>
+          <hi9-security-card-small></hi9-security-card-small>
+          <hi9-support-card-small></hi9-support-card-small>
+      </div>
 
     </hi9-customer-card>
 

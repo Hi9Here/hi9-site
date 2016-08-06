@@ -9,52 +9,15 @@
 <link rel="import" href="elements/hi9-quote-card-small.html">
 <link rel="import" href="../bower_components/iron-icon/iron-icon.html">
 <link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+
 <dom-module id="my-security">
+
+  <link rel=import type="css" href="styles/my-page-style.css">
 
   <template>
 
     <style>
-      h2 {
-        font-weight: 300;
-        margin-bottom: 0px;
-      }
-      h3 {
-        font-weight: 500;
-        margin: 0;
-      }
-      #sells {
-        display: block;
-        float: left;
-        width: 100%;
-      }
-      #nos iron-icon {
-        color: red;
-      }
-      #yeses iron-icon {
-        color: green;
-      }
-      .options {
-        display: inline;
-        float: left;
-        margin: 10px;
-        line-height: 2;
-      }
-      #top {
-        float: left;
-        height: 230px;
-        width: 80%;
-      }
-      #ctacard {
-        float: right;
-        width: 20%;
-        padding-top: 10px;
-        height: 220px;
-      } 
-      #text {
-        margin-top: 10px;
-        float: left;
-      }
-
+  
     </style>
 
     <hi9-customer-card title="Security" color="#c40121" icon="folder-shared"></iron-icon>
@@ -76,13 +39,15 @@
        <p>Add to that, if you're out & about or on another computer use your Yubikey for complete confidence & assurance; no-one will be able to access your account.</p> <p>Spend a little bit extra & your Yubikey can also provide a one time password option so no more scratching heads, no more frustrations. Great eh?</p>
        <p>Other products that might interest you</p>
 
- 
       </div>
 
-      <hi9-chromebook-card-small></hi9-chromebook-card-small>
-      <hi9-mifi-card-small></hi9-mifi-card-small>
-      <hi9-support-card-small></hi9-support-card-small>
-      <hi9-deko-card-small></hi9-deko-card-small>
+      <div id="smallcard">
+        <h3>Other Products That Might Interest You.</h3>
+          <hi9-chromebook-card-small></hi9-chromebook-card-small>
+          <hi9-mifi-card-small></hi9-mifi-card-small>
+          <hi9-support-card-small></hi9-support-card-small>
+          <hi9-deko-card-small></hi9-deko-card-small>
+      </div>
 
     </hi9-customer-card>
 
