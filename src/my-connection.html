@@ -2,15 +2,18 @@
 <link rel="import" href="elements/hi9-customer-card.html">
 <link rel="import" href="cards/hi9-chromebook-card-small.html">
 <link rel="import" href="elements/hi9-card.html">
-<link rel="import" href="cards/hi9-mifi-card-small.html">
 <link rel="import" href="cards/hi9-security-card-small.html">
-<link rel="import" href="cards/hi9-angel-card-small.html">
-<dom-module id="my-mifi">
+<link rel="import" href="cards/hi9-support-card-small.html">
+<link rel="import" href="cards/hi9-deko-card-small.html">
+<link rel="import" href="elements/hi9-quote-card-small.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<dom-module id="my-connection">
 
   <template>
 
     <style>
-          h2 {
+      h2 {
         font-weight: 300;
         margin-bottom: 0px;
       }
@@ -62,6 +65,7 @@
       </div>
     </div>
       <div id="ctacard">
+        <hi9-quote-card-small></hi9-quote-card-small>
       </div>
       <hi9-angel-card-small></hi9-angel-card-small>
 
@@ -81,7 +85,7 @@
 
     Polymer({
 
-      is: 'my-mifi'
+      is: 'my-connection'
 
     });
 
