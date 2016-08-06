@@ -25,14 +25,14 @@
       }
       #top {
         float: left;
-        height: 230px;
+        height: 180px;
         width: 80%;
       }
       #ctacard {
         float: right;
         width: 20%;
         padding-top: 10px;
-        height: 220px;
+        height: 170px;
       } 
       #text {
         margin-top: 10px;
@@ -41,4 +41,6 @@
       #smallcard {
         display: block;
         text-align: center;
+        width: 100%;
+        float: left;
       }
