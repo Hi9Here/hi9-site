@@ -1,73 +1,44 @@
+
 <link rel="import" href="hi9-elements.html">
 
 <dom-module id="my-contactus">
 
+  <link rel=import type="css" href="styles/my-page-style.css">
+
   <template>
 
     <style>
-      :host {
-        display: block;
-        padding: 10px;
-      }
-      .card {
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-        padding: 16px;
-        margin: 24px;
-        border-radius: 5px;
-        background-color: #fff;
-        color: #757575;
-      }
-      .circle {
-        display: inline-block;
-        height: 64px;
-        width: 64px;
-        border-radius: 50%;
-        background: #ddd;
-        line-height: 64px;
-        font-size: 30px;
-        color: #555;
-        text-align: center;
-      }
-      h1 {
-        font-size: 22px;
-        margin: 16px 0;
-        color: #fff;
-        font-weight: 300;
-      }
-      paper-toolbar {
-        background-color: #055474;
-      }
-      paper-toolbar iron-icon {
-        width: 40px;
-        height: 40px;
-        position: absolute;
-        right: 20px;
-      }
-      a {
-        text-decoration: none;
-      }
-      paper-button {
-        color: #fff;
-        background-color: red;
-      }
+
     </style>
 
-    <div class="card">
-      <paper-toolbar class="medium">
-        <div title>     
-          <h1>Contact Us</h1>
-        </div>
-        <iron-icon icon="question-answer"></iron-icon>
-      </paper-toolbar>
-     
-      <hi9-wo-card-small></hi9-wo-card-small>
-      <hi9-kate-card-small></hi9-kate-card-small>
-      <hi9-phone-card-small></hi9-phone-card-small>
-      <hi9-facebook-card-small></hi9-facebook-card-small>
-      <hi9-twitter-card-small></hi9-twitter-card-small>
-      <hi9-instagram-card-small></hi9-instagram-card-small>
+    <hi9-customer-card title="Laptop" color="#c40121" icon="folder-shared"></iron-icon>
+    
 
+    <div id="top">
+      <h2>Keen To Hear</h2> 
+      <div id="tldr">
+        
+     
+      </div>
     </div>
+      <div id="ctacard">
+        <hi9-quote-card-small></hi9-quote-card-small>
+   </div>
+
+      <div id="text">
+
+      </div>
+
+      <div id="smallcard">
+        <hi9-wo-card-small></hi9-wo-card-small>
+        <hi9-kate-card-small></hi9-kate-card-small>
+        <hi9-phone-card-small></hi9-phone-card-small>
+        <hi9-facebook-card-small></hi9-facebook-card-small>
+        <hi9-twitter-card-small></hi9-twitter-card-small>
+        <hi9-instagram-card-small></hi9-instagram-card-small>
+      </div>
+
+    </hi9-customer-card>
 
   </template>
 
