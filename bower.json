@@ -21,7 +21,9 @@
     "iron-image": "PolymerElements/iron-image#^1.2.3",
     "paper-toolbar": "PolymerElements/paper-toolbar#^1.1.6",
     "paper-input": "PolymerElements/paper-input#^1.1.15",
-    "paper-fab": "PolymerElements/paper-fab#^1.2.0"
+    "paper-fab": "PolymerElements/paper-fab#^1.2.0",
+    "iron-ajax": "PolymerElements/iron-ajax#^1.4.3",
+    "polymerfire": "firebase/polymerfire#^0.9.4"
   },
   "devDependencies": {
     "web-component-tester": "^4.0.0"

@@ -23,7 +23,7 @@
       :host {
         display: block;
         --app-primary-color: #512DA8;
-        --app-secondary-color: black;
+        --app-secondary-color: white;
       }
       app-header {
         background-color: var(--app-primary-color);
@@ -41,6 +41,7 @@
         line-height: 40px;
         text-decoration: none;
         color: var(--app-secondary-color);
+        font-weight: 300;
       }
       .drawer-list a.iron-selected {
         color: black;
@@ -50,7 +51,7 @@
         padding-left: 32px;
       }
       iron-icon {
-        color: #333;
+        color: #fff;
         width: 26px;
         height: 26px;
         margin-right: 10px;
@@ -61,6 +62,7 @@
       }
       .menu:hover {
         background-color: #f0f2fb;
+        color: #333;
       }
 
       h1 {
@@ -83,6 +85,13 @@
       }
       app-toolbar a {
         text-decoration: none;
+      }
+      app-drawer {
+      --app-drawer-scrim-background: rgba(0, 0, 100, 0.8);
+      --app-drawer-content-container: {
+        background-color: #512DA8;
+        color: #fff;
+        }
       }
 
 
