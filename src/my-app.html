@@ -25,7 +25,6 @@
         --app-primary-color: rgba(255,255,255,.95);
         --app-secondary-color: black;
       }
-
       app-header {
         background-color: var(--app-primary-color);
         color: #fff;
@@ -124,6 +123,7 @@
           <my-support name="support"></my-support>
           <my-laptop name="laptop"></my-laptop>
           <my-connection name="connection"></my-connection>
+          <my-getaquote name="getaquote"></my-getaquote>
         </iron-pages>
 
       </app-header-layout>
@@ -161,6 +161,7 @@
         this.importHref(
           this.resolveUrl('my-' + page + '.html'), null, null, true);
       }
+
 
     });
 

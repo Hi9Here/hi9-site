@@ -43,9 +43,20 @@
         top: 180px;
         right: 30px;
       }
-  
+      #gaq paper-button {
+        position: fixed;
+        top: 100px;
+        right: 50px;
+        background-color: red;
+        color: #fff;
+      }
+      #gaq paper-button iron-icon {
+        color: #fff;
+        height: 24px;
+        width: 24px;
+      }
     </style>
-     
+
       <paper-toolbar class="medium" style="background-color: {{color}}">
         <div title style="width:100%">     
           <h1>{{title}}</h1>
@@ -53,7 +64,16 @@
         <iron-icon icon="{{icon}}"></iron-icon>
       </paper-toolbar>
 
-        <content></content>
+      <content></content>
+
+      <div id="gaq" style="display: {{gaq}}">
+        <a href="/getaquote">
+          <paper-button>
+          <iron-icon icon="create"></iron-icon>
+            Get a Quote
+          </paper-button>
+        </a>
+      </div>
 
   </template>
 
@@ -65,7 +85,11 @@
       properties: {
         title: String,
         color: String,
-        icon: String
+        icon: String,
+        gaq: {
+          type: String,
+          value: ""
+        }
       }
 
     });

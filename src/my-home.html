@@ -159,7 +159,10 @@
       margin: 0;
     }
     iron-icon {
-      margin: 5px;
+      margin: 5px 10px 10px 10px;
+      width: 34px;
+      height: 34px;
+      color: #333;
     }
     iron-image {
       width: 150;
@@ -174,15 +177,12 @@
     }
     #secondsection {
       background: white;
-      height: 180px;
-      display: block;
-      text-align: center;
     }
     #secondsection iron-image {
       display: inline-block;
       width: 70px;
       width: 150px;
-      margin: 20px;
+      margin: 10px;
     }
     #thirdsection {
       background: #fff;
@@ -193,10 +193,31 @@
     article img {
       position: absolute;
       top: 0px;
-      left: 10px;
+      left: 40px;
     }
-
-
+    #thirdsection hi9-card {
+      margin-left: 20px;
+    }
+    #secondsection iron-image {
+      height: 120px;
+      width: 120px;
+    }
+    iron-image {
+      color: #333;
+      width: 30px;
+      height: 30px;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 10px;
+      text-align: left;
+    }
+    .cardlist {
+      width: 150px;
+      height: 130px;
+      font-weight: 300;
+    }
+    
   </style>
 
 
@@ -272,11 +293,175 @@
 
   <section>
     <article id="thirdsection">
-      <h2>For Organisations</h2>
-      <hi9-card title="Hardware"></hi9-card>
-      <hi9-card title="Software"></hi9-card>
-      <hi9-card title="Support"></hi9-card>
-      <hi9-card title="Services"></hi9-card>
+        <h2><iron-icon icon="folder-shared"></iron-icon>For Organisations</h2>
+      <hi9-card 
+        title="Hardware" 
+        width="170" 
+        height="260"
+        buttontitle="learn more"
+      >
+        <div class="cardlist">
+          <ul>
+            <li>Chromebook Laptop</li>
+            <li>MIFI & 6Gb Data</li>
+          </ul>
+        </div>
+      </hi9-card>
+      <hi9-card 
+        title="Software" 
+        width="170" 
+        height="260"
+        buttontitle="learn more"
+      >
+        <div class="cardlist">
+            <ul>
+              <li>Chromebook Laptop</li>
+              <li>MIFI & 6Gb Data</li>
+            </ul>
+        </div>
+      </hi9-card>
+      <hi9-card 
+        title="Support" 
+        width="170" 
+        height="260"
+        buttontitle="learn more"
+      >
+        <div class="cardlist">
+          <ul>
+            <li>Chromebook Laptop</li>
+            <li>MIFI & 6Gb Data</li>
+          </ul>
+        </div>
+      </hi9-card>
+      <hi9-card 
+        title="Services" 
+        width="170" 
+        height="260"
+        buttontitle="learn more"
+      >
+        <div class="cardlist">
+          <ul>
+            <li>Chromebook Laptop</li>
+            <li>MIFI & 6Gb Data</li>
+          </ul>
+        </div>
+      </hi9-card>
+    </article>
+  </section>
+
+  <section>
+    <article id="thirdsection">
+      <h2><iron-icon icon="supervisor-account"></iron-icon>For Families</h2>
+      <hi9-card 
+        title="Hardware" 
+        width="170" 
+        height="260"
+        buttontitle="learn more"
+      >
+        <div class="cardlist">
+          <ul>
+            <li>Chromebook Laptop</li>
+            <li>MIFI & 6Gb Data</li>
+          </ul>
+        </div>
+      </hi9-card>
+      <hi9-card 
+        title="Software" 
+        width="170" 
+        height="260"
+        buttontitle="learn more"
+      >
+        <div class="cardlist">
+            <ul>
+              <li>Chromebook Laptop</li>
+              <li>MIFI & 6Gb Data</li>
+            </ul>
+        </div>
+      </hi9-card>
+      <hi9-card 
+        title="Support" 
+        width="170" 
+        height="260"
+        buttontitle="learn more"
+      >
+        <div class="cardlist">
+          <ul>
+            <li>Chromebook Laptop</li>
+            <li>MIFI & 6Gb Data</li>
+          </ul>
+        </div>
+      </hi9-card>
+      <hi9-card 
+        title="Services" 
+        width="170" 
+        height="260"
+        buttontitle="learn more"
+      >
+        <div class="cardlist">
+          <ul>
+            <li>Chromebook Laptop</li>
+            <li>MIFI & 6Gb Data</li>
+          </ul>
+        </div>
+      </hi9-card>
+    </article>
+  </section>
+
+  <section>
+    <article id="thirdsection">
+      <h2><iron-icon icon="account-circle"></iron-icon>For Individuals</h2>
+      <hi9-card 
+        title="Hardware" 
+        width="170" 
+        height="260"
+        buttontitle="learn more"
+      >
+        <div class="cardlist">
+          <ul>
+            <li>Chromebook Laptop</li>
+            <li>MIFI & 6Gb Data</li>
+          </ul>
+        </div>
+      </hi9-card>
+      <hi9-card 
+        title="Software" 
+        width="170" 
+        height="260"
+        buttontitle="learn more"
+      >
+        <div class="cardlist">
+            <ul>
+              <li>Chromebook Laptop</li>
+              <li>MIFI & 6Gb Data</li>
+            </ul>
+        </div>
+      </hi9-card>
+      <hi9-card 
+        title="Support" 
+        width="170" 
+        height="260"
+        buttontitle="learn more"
+      >
+        <div class="cardlist">
+          <ul>
+            <li>Chromebook Laptop</li>
+            <li>MIFI & 6Gb Data</li>
+          </ul>
+        </div>
+      </hi9-card>
+      <hi9-card 
+        title="Services" 
+        width="170" 
+        height="260"
+        buttontitle="learn more"
+      >
+        <div class="cardlist">
+          <ul>
+            <li>Chromebook Laptop</li>
+            <li>MIFI & 6Gb Data</li>
+          </ul>
+        </div>
+      </hi9-card>
     </article>
   </section>
 
