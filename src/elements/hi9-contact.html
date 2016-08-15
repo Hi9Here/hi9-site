@@ -5,8 +5,8 @@
 <link rel="import" href="../../bower_components/paper-material/paper-material.html">
 <link rel="import" href="../../bower_components/paper-toolbar/paper-toolbar.html">
 <link rel="import" href="../../bower_components/paper-input/paper-input.html">
-<link rel="import" href="../../bower_components/polymerfire/firebase.html">
-
+<link rel="import" href="../../bower_components/polymerfire/firebase-app.html">
+<link rel="import" href="../../bower_components/polymerfire/firebase-document.html">
 
 <dom-module id="hi9-contact">
   <template>
@@ -51,11 +51,26 @@
 
     </style>
 
+    <firebase-app 
+      name="hi9"
+      api=key="AIzaSyCjdVJOxaC92si8-9qideZY1ILwINsXu74"
+      auth-domain="hi9-site-93824.firebaseapp.com"
+      database-url="https://hi9-site-93824.firebaseio.com">
+    </firebase-app>
+    <firebase-document
+      location = "https://TU-APP.firebaseio.com/contactList"
+      data     = "{{contactList}}">
+    </firebase-document>
+
+
         <div id="inputs">
           <h2>Would love to talk to you about your needs</h2>
           <paper-input-container>
             <label>Name*</label>
-            <input is="iron-input" required auto-validate error-message="needs some text!">
+            <input 
+            is="iron-input" 
+            bind-value = "{{globalMessage.name}}"
+            required auto-validate error-message="needs some text!">
           </paper-input-container>
           <paper-input-container>
             <label>Email*</label>
@@ -88,9 +103,10 @@
   </template>
   
   <script>
-    Polymer({
-      is: 'hi9-contact'  
-      
+
+Polymer({
+    is: 'hi9-contact'
+
     });
   </script>
 </dom-module>
