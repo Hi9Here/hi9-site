@@ -159,7 +159,8 @@
           <my-support name="support"></my-support>
           <my-laptop name="laptop"></my-laptop>
           <my-connection name="connection"></my-connection>
-          <my-getaquote name="getaquote"></my-getaquote>
+          <my-getaquote on-done="thankUser" name="getaquote"></my-getaquote>
+          <my-contactdone name="contactdone"></my-contactdone>
         </iron-pages>
 
       </app-header-layout>
@@ -196,9 +197,10 @@
         // load page import on demand.
         this.importHref(
           this.resolveUrl('my-' + page + '.html'), null, null, true);
-      }
-
-
+      },
+      thankUser: function() {
+       this._routePageChanged('contactdone')        
+      },
     });
 
   </script>

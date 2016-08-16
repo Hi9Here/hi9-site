@@ -17,6 +17,7 @@
     "src/my-support.html",
     "src/my-laptop.html",
     "src/my-connection.html",
-    "src/my-getaquote.html"
+    "src/my-getaquote.html",
+    "src/my-contactdone.html"
   ]
 }

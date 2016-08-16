@@ -51,17 +51,12 @@
 
     </style>
 
-    <firebase-app 
-      name="hi9"
-      api=key="AIzaSyCjdVJOxaC92si8-9qideZY1ILwINsXu74"
-      auth-domain="hi9-site-93824.firebaseapp.com"
-      database-url="https://hi9-site-93824.firebaseio.com">
-    </firebase-app>
-    <firebase-document
+    <firebase-document 
+      id="firebase"
+      app-name="hi9"
       location = "https://TU-APP.firebaseio.com/contactList"
-      data     = "{{contactList}}">
+      data = "{{contact}}">
     </firebase-document>
-
 
         <div id="inputs">
           <h2>Would love to talk to you about your needs</h2>
@@ -69,34 +64,44 @@
             <label>Name*</label>
             <input 
             is="iron-input" 
-            bind-value = "{{globalMessage.name}}"
+            bind-value = "{{contact.name}}"
             required auto-validate error-message="needs some text!">
           </paper-input-container>
           <paper-input-container>
             <label>Email*</label>
-            <input is="iron-input" required auto-validate error-message="needs some text!">
+            <input is="iron-input" 
+            bind-value = "{{contact.email}}"
+            required auto-validate error-message="needs some text!">
           </paper-input-container>
           <paper-input-container>
             <label>Phone*</label>
-            <input is="iron-input" required auto-validate error-message="needs some text!">
+            <input is="iron-input"
+            bind-value = "{{contact.phone}}"
+            required auto-validate error-message="needs some text!">
           </paper-input-container>
             <paper-input-container>
             <label>Company</label>
-            <input is="iron-input" required auto-validate error-message="needs some text!">
+            <input is="iron-input"
+            bind-value = "{{contact.company}}"
+            required auto-validate error-message="needs some text!">
           </paper-input-container>
             <paper-input-container>
             <label>Website</label>
-            <input is="iron-input" required auto-validate error-message="needs some text!">
+            <input is="iron-input"
+            bind-value = "{{contact.website}}"
+            required auto-validate error-message="needs some text!">
           </paper-input-container>
             <paper-input-container>
             <label>Country</label>
-            <input is="iron-input" required auto-validate error-message="needs some text!">
+            <input is="iron-input"
+            bind-value = "{{contact.country}}"
+            required auto-validate error-message="needs some text!">
           </paper-input-container>
         </div>
 
         <div id="requestbutton">
           <div id="reqbut">
-            <paper-button raised>Get A Quote</paper-button>
+            <paper-button on-tap="done" raised>Get A Quote</paper-button>
           </div>
         </div>
 
@@ -105,7 +110,15 @@
   <script>
 
 Polymer({
-    is: 'hi9-contact'
+    is: 'hi9-contact',
+    properties: {
+      contact: Object
+    },
+    done : function() {
+      this.$.firebase.save("contactList").then(function() {
+      })
+      this.fire("done")
+    }
 
     });
   </script>
