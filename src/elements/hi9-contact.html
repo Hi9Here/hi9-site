@@ -118,7 +118,12 @@ Polymer({
       this.$.firebase.save("contactList").then(function() {
       })
       this.fire("done")
-    }
+    },
+    country: {
+        type: String,
+        value: "United Kingdom",
+        notify: true
+      }
 
     });
   </script>
