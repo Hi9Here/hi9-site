@@ -7,13 +7,7 @@
       font-weight: 400;
       margin: 0;
     }
-    
-    #sells {
-      display: block;
-      float: left;
-      width: 100%;
-    }
-    
+
     #nos iron-icon {
       color: red;
     }
@@ -29,11 +23,6 @@
       line-height: 2;
     }
     
-    #top {
-      float: left;
-      height: 180px;
-      width: 100%;
-    }
     
     #ctacard {
       float: right;
