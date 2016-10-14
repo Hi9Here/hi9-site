@@ -1,6 +1,6 @@
     h2 {
       font-weight: 300;
-      margin-bottom: 15px;
+      margin: 20px 0px 0px 20px;
     }
     
     h3 {
@@ -8,6 +8,16 @@
       margin: 0;
     }
 
+    #nos {
+      display: inline-block;
+      text-align: left;
+      width: 45%;
+    }
+    #yeses {
+      display: inline-block;
+      text-align: left;
+      width: 45%;
+    }
     #nos iron-icon {
       color: red;
     }
@@ -15,14 +25,16 @@
     #yeses iron-icon {
       color: green;
     }
+    #nosandyes {
+      display: block;
+      text-align: center;
+    }
     
     .options {
       display: inline;
-      float: left;
       margin: 10px;
       line-height: 2;
     }
-    
     
     #ctacard {
       float: right;
@@ -32,8 +44,9 @@
     }
     
     #text {
-      margin-top: 10px;
+      margin: 10px 20px 10px 20px;
       float: left;
+
     }
     
     #smallcard {
