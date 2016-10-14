@@ -141,7 +141,12 @@
       height: 500px;
       text-align: center;
       line-height: 1.5;
-    )
+      display: block;
+    }
+    .col {
+      display: inline-block;
+      width: 45%;
+    }
     }
 
     h2 {
@@ -302,13 +307,17 @@
   <section>
     <app-box class="second" effects="parallax-background">
       <div class="sectiontext">
-        <h2>Full Support by Phone, Online or in person</h2>
-        <h2>No Anti Virus Software</h2>
-        <h2>No Annoying Updates</h2> 
-        <h2>High Level Security</h2>
-        <h2>No Apps to Install</h2> 
-        <h2>Easy to Use Web</h2>
-        <h2>Affordable</h2>
+        <div class="col">
+          <h2><iron-icon icon="account-circle"></iron-icon>Full Support by Phone, Online or in person</h2>
+          <h2>No Anti Virus Software</h2>
+          <h2>No Annoying Updates</h2> 
+          <h2>High Level Security</h2>
+        </div>
+        <div class="col">
+          <h2>No Apps to Install</h2> 
+          <h2>Easy to Use Web</h2>
+          <h2>Affordable</h2>
+        </div>
       </div>
     </app-box>
   </section>
