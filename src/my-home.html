@@ -7,6 +7,7 @@
 <link rel="import" href="../bower_components/iron-icons/iron-icons.html">
 <link rel="import" href="../bower_components/iron-icons/hardware-icons.html">
 <link rel="import" href="../bower_components/iron-icons/image-icons.html">
+<link rel="import" href="../bower_components/iron-image/iron-image.html">
 <link rel="import" href="../bower_components/paper-material/paper-material.html">
 <link rel="import" href="../bower_components/paper-toolbar/paper-toolbar.html">
 <link rel="import" href="../bower_components/iron-image/iron-image.html">
@@ -17,11 +18,31 @@
     <template>
 
 		<style is="custom-style">
-		#buttons {
-				text-align: center;
+			.heroelement {
+				display: inline-block;
+				vertical-align:top;
+				width: 45%;
+			}
+			#custcards {
+				text-align:center;
+				margin: 20px;
+			}
+			#hero {
+        text-align:center;
+			}
+			#herotext {
+				text-align: left;
+				margin: 20px 0px 0px 0px;
+			}
+			#heroimage {
+
+			}
+			#heroimage iron-image {
+				height: 300px;
+				width:500px;
 			}
 			
-			#buttons paper-material {
+			#custcards paper-material {
 				display: inline-block;
 				width: 200px;
 				height: 250px;
@@ -31,25 +52,22 @@
 				border-radius: 5px;
 				color: #757575;
 			}
-			
-			#buttons h3 {
-				font-weight: 300;
-				color: #fff;
-				font-size: 26px;
-				background-color: #333;
-				opacity: 0.8;
-				padding: 10px;
-			}
-			
-			#buttons {
-				padding-top: 50px;
-			}
-			
 			h1 {
 				font-size: 40px;
 				color: #fff;
 				font-weight: 500;
 				margin: 0;
+			}
+			h3 {
+				font-weight: 300;
+				font-size: 30px;
+				margin-bottom: 0;
+			}
+			h4 {
+				font-weight: 300;
+			}
+			h2.italic {
+				font-style: italic;
 			}
 			
 			body {
@@ -59,7 +77,7 @@
 			}
 			
 			app-box {
-				height: 500px;
+				height: 310px;
 			}
 			
 			.blank article {
@@ -67,16 +85,6 @@
 				background: none;
 			}
 			
-			.first {
-				--app-box-background-front-layer: {
-					background-image: url(/images/tech.jpg);
-					padding-bottom: 120px;
-					margin-top: -40px;
-					height: 100%;
-					background-color: #512da8;
-				}
-				;
-			}
 			
 			.first article {
 				background: none;
@@ -100,6 +108,13 @@
 				background-color: red;
 			}
 			
+			/*.first {
+				--app-box-background-front-layer: {
+					height: 100%;
+				}
+				;
+			}*/
+
 			.second {
 				--app-box-background-front-layer: {
 					background: #fff;
@@ -286,8 +301,34 @@
 
 			<section>
 				<app-box class="first" effects="parallax-background">
-					<div id="buttons">
-						<h3>Technology & the Web Made so Simple there's No Need for Training</h3>
+					
+					<div id="hero">
+
+						<div id="herotext" class="heroelement">
+							<h3>Technology & the Web Made Simple</h3>
+							<h4>Using Next Generation Hardware and Software we offer a full service company for people who find technology and the web difficult</h4>
+							<h4>From NGOs, people wanting to help their Family access services on the web. We eliminate the need for training and just make technology and the web work for your users.</h4>
+						</div>
+
+						<div id="heroimage" class="heroelement">			
+							<iron-image src="../images/sections/deko-laptop-mobile-wireframe.png" preload sizing="cover"></iron-image>					
+						</div>
+					
+					</div>
+
+				</app-box>
+			</section>
+
+			<section>
+				<article>
+					<h2>"Computers Are Just Too Hard to Use and It's Not Your Fault"</h2>
+					<h2 class="italic">Walt Mossberg – Executive Editor - Verge</h2>
+				</article>
+			</section>
+
+			<section>
+					<div id="custcards">	
+						
 						<hi9-card title="Organisations" barcolor="#c40121" width="170" height="220" buttontitle="learn more" link="organisation">
 							<iron-icon icon="folder-shared" style="color: #c40121"></iron-icon>
 						</hi9-card>
@@ -299,16 +340,7 @@
 						<hi9-card title="Individuals" barcolor="#03B5A0" width="170" height="220" buttontitle="learn more" link="individuals">
 							<iron-icon icon="account-circle" style="color: #03B5A0"></iron-icon>
 						</hi9-card>
-
 					</div>
-				</app-box>
-			</section>
-
-			<section>
-				<article>
-					<h2>"Computers Are Just Too Hard to Use and It's Not Your Fault</h2>
-					<h2>Walt Mossberg – Executive Editor - Verge</h2>
-				</article>
 			</section>
 
 			<section>
