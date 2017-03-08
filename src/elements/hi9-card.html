@@ -16,34 +16,37 @@
         margin: 10px;
       }
       iron-icon {
-      margin: 5px;
+        margin: 5px;
       }
-    iron-image {
-      width: 130px;
-      height: 100px;
+      iron-image {
+        width: 130px;
+        height: 100px;
       }
-    paper-material {
-      display: inline-block;
-      background-color: #fff;
-      border-radius: 5px;
-      color: #757575;
-    }
-    h3 {
-      font-weight: 300;
-    }
-    a {
-      text-decoration: none;
-    }
-    paper-button {
+      paper-material {
+        display: inline-block;
+        background-color: #fff;
+        border-radius: 5px;
+        color: #757575;
+      }
+      h3 {
+        font-weight: 300;
+      }
+      a {
+        text-decoration: none;
+      }
+      paper-button {
         color: #fff;
         background-color: red;
         font-size: 14px;
-    }
-    paper-toolbar {
-      font-size: 14px;
-      text-align: center;
-    }
-    
+      }
+      paper-toolbar {
+        font-size: 14px;
+        text-align: center;
+      }
+      paper-toolbar {
+        --paper-toolbar-sm-height: 35px;
+        --paper-toolbar-height: 35px;
+      }
     </style>
     
    <a href="{{link}}">
@@ -54,7 +57,7 @@
           <h3>{{title}}</h3>
         </div>
       </paper-toolbar>          
-      <iron-image src="{{image}}" preload sizing="{{imagesizing}}" style="display: {{imagedisplay}}; width:{{imagewidth}}px; height:{{imageheight}};"></iron-image> 
+      <iron-image src="{{image}}" preload sizing="{{imagesizing}}" style="display: {{imagedisplay}}; width:{{imagewidth}}; height:{{imageheight}};"></iron-image> 
       <content></content>  
     </paper-material>
   </a>
@@ -63,13 +66,13 @@
   <script>
     Polymer({
       is: 'hi9-card',
-      properties: {
-      title: String,
-      barcolor: String,
-      icon : String,
-      icondisplay : {
-        type: String,
-        value: "none"
+        properties: {
+        title: String,
+        barcolor: String,
+        icon : String,
+        icondisplay : {
+          type: String,
+          value: "none"
       },
       toolbardisplay: {
         type: String,
@@ -82,18 +85,24 @@
       image: String,
       imagedisplay: {
         type: String,
-        value: "none"
+        value: ""
       },
-      imageheight: String,
-      imagewidth: String,
+      imageheight: {
+        type: String,
+        value: "133px"
+      },
+      imagewidth: {
+        type: String,
+        value: "100%"
+      },
       link: String,
       width: {
         type: String,
-        value: 130
+        value: 200
       },
       height: {
         type: String,
-        value: 163
+        value: 260
       },
       buttondisplay: String,
       buttonlink: String,

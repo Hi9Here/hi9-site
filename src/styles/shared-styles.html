@@ -1,0 +1,36 @@
+<!-- shared-styles.html -->
+<dom-module id="shared-styles">
+  <template>
+    <style>
+      .cardbox {
+            @apply(--layout-horizontal);
+            @apply(--layout-center-justified);
+            @apply(--layout-wrap);
+      }
+      section {
+            padding: 10px;
+      }
+      .options {
+            display: inline-block;
+            text-align: left;
+            width: 45%;
+      }
+      #nos iron-icon {
+            color: red;
+      }
+    
+      #yeses iron-icon {
+            color: green;
+      }
+      #nosandyes {
+            @apply(--layout-horizontal);
+            @apply(--layout-center-justified);
+            @apply(--layout-wrap);
+      }
+      h3 {
+            font-weight: 400;
+            margin: 10px;
+    }
+    </style>
+  </template>
+</dom-module>

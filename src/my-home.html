@@ -1,32 +1,16 @@
-<link rel="import" href="../bower_components/polymer/polymer.html">
-<link rel="import" href="../bower_components/app-layout/app-scroll-effects/effects/parallax-background.html">
-<link rel="import" href="../bower_components/app-layout/app-box/app-box.html">
-<link rel="import" href="../bower_components/app-layout/demo/sample-content.html">
-<link rel="import" href="../bower_components/paper-button/paper-button.html">
-<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
-<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
-<link rel="import" href="../bower_components/iron-icons/hardware-icons.html">
-<link rel="import" href="../bower_components/iron-icons/image-icons.html">
-<link rel="import" href="../bower_components/iron-image/iron-image.html">
-<link rel="import" href="../bower_components/paper-material/paper-material.html">
-<link rel="import" href="../bower_components/paper-toolbar/paper-toolbar.html">
-<link rel="import" href="../bower_components/iron-image/iron-image.html">
-<link rel="import" href="elements/hi9-card.html">
+<link rel="import" href="hi9-elements.html">
 
 <dom-module id="my-home">
 
     <template>
 
-		<style is="custom-style">
+		<style is="custom-style" include="shared-styles">
 			.heroelement {
 				display: inline-block;
 				vertical-align:top;
 				width: 45%;
 			}
-			#custcards {
-				text-align:center;
-				margin: 20px;
-			}
+
 			#hero {
         text-align:center;
 				margin-top: 20px;
@@ -34,9 +18,6 @@
 			#herotext {
 				text-align: left;
 				margin: 20px 0px 0px 0px;
-			}
-			#heroimage {
-
 			}
 			#heroimage iron-image {
 				height: 300px;
@@ -198,105 +179,100 @@
 				width: 45%;
 				text-align: left;
 			}
-		}
-		h2 {
-			font-weight: 300;
-			font-size: 24px;
-			margin: 0;
-			font-family: ralewayextralight, "Helvetica Neue", Helvetica, Arial, sans-serif;
-			color: #333;
-			line-height: 1.3;
-		}
-		.blank h2 {
-			color: #333;
-		}
-		article p {
-			font-size: 20px;
-			color: #fff;
-			font-family: 'Roboto', 'Noto', sans-serif;
-			font-weight: 300;
-			padding: 0 20px 20px 20px;
-		}
-		article hr {
-			width: 100px;
-			height: 1px;
-			border: none;
-			margin: 20px auto;
-			background-color: black;
-		}
-		p {
-			margin: 0;
-		}
-		iron-icon {
-			margin: 5px 10px 10px 10px;
-			width: 34px;
-			height: 34px;
-			color: #333;
-		}
-		iron-image {
-			width: 150;
-			height: 140px;
-		}
-		a {
-			text-decoration: none;
-		}
-		hi9-card iron-icon {
-			height: 140px;
-			width: 140px;
-		}
-		#secondsection {
-			background: white;
-		}
-		#secondsection iron-image {
-			display: inline-block;
-			width: 70px;
-			width: 150px;
-			margin: 10px;
-		}
-		#thirdsection {
-			background: #fff;
-		}
-		#thirdsection h2 {
-			color: #333;
-		}
-		article img {
-			position: absolute;
-			top: 0px;
-			left: 40px;
-		}
-		#thirdsection hi9-card {
-			margin-left: 20px;
-		}
-		#secondsection iron-image {
-			height: 120px;
-			width: 120px;
-		}
-		iron-image {
-			color: #333;
-			width: 30px;
-			height: 30px;
-		}
-		ul {
-			list-style-type: none;
-			padding-left: 10px;
-			text-align: left;
-		}
-		.cardlist {
-			width: 150px;
-			height: 130px;
-			font-weight: 300;
-		}
-		article h2 {
-			color: #fff;
-			font-weight: 300;
-			font-size: 24px;
-			margin: 0;
-			font-family: ralewayextralight, "Helvetica Neue", Helvetica, Arial, sans-serif;
-			line-height: 1.3;
-		}
+			}
+			h2 {
+				font-weight: 300;
+				font-size: 24px;
+				margin: 0;
+				font-family: ralewayextralight, "Helvetica Neue", Helvetica, Arial, sans-serif;
+				color: #333;
+				line-height: 1.3;
+			}
+			.blank h2 {
+				color: #333;
+			}
+			article p {
+				font-size: 20px;
+				color: #fff;
+				font-family: 'Roboto', 'Noto', sans-serif;
+				font-weight: 300;
+				padding: 0 20px 20px 20px;
+			}
+			article hr {
+				width: 100px;
+				height: 1px;
+				border: none;
+				margin: 20px auto;
+				background-color: black;
+			}
+			p {
+				margin: 0;
+			}
+			iron-icon {
+				margin: 5px 10px 10px 10px;
+				width: 34px;
+				height: 34px;
+				color: #333;
+			}
+			a {
+				text-decoration: none;
+			}
+			hi9-card iron-icon {
+				height: 120px;
+				width: 120px;
+			}
+			#secondsection {
+				background: white;
+			}
+			#secondsection iron-image {
+				display: inline-block;
+				width: 70px;
+				width: 150px;
+				margin: 10px;
+			}
+			#thirdsection {
+				background: #fff;
+			}
+			#thirdsection h2 {
+				color: #333;
+			}
+			article img {
+				position: absolute;
+				top: 0px;
+				left: 40px;
+			}
+			#thirdsection hi9-card {
+				margin-left: 20px;
+			}
+			#secondsection iron-image {
+				height: 120px;
+				width: 120px;
+			}
+			iron-image {
+				color: #333;
+				width: 30px;
+				height: 30px;
+			}
+			ul {
+				list-style-type: none;
+				padding-left: 10px;
+				text-align: left;
+			}
+			.cardlist {
+				width: 150px;
+				height: 130px;
+				font-weight: 300;
+			}
+			article h2 {
+				color: #fff;
+				font-weight: 300;
+				font-size: 24px;
+				margin: 0;
+				font-family: ralewayextralight, "Helvetica Neue", Helvetica, Arial, sans-serif;
+				line-height: 1.3;
+			}
 		</style>
 
-		</head>
 
 		<body class="fullbleed" unresolved>
 
@@ -328,18 +304,27 @@
 			</section>
 
 			<section>
-					<div id="custcards">	
+					<div id="custcards" class="cardbox">	
 						
-						<hi9-card title="Organisations" barcolor="#c40121" width="170" height="220" buttontitle="learn more" link="organisation">
+						<hi9-card title="Organisations" barcolor="#c40121" link="organisation" imagedisplay="none">
 							<iron-icon icon="folder-shared" style="color: #c40121"></iron-icon>
+							<div class="description">
+								From Business to NGO to help Users that Find Technology Difficult
+							</div>
 						</hi9-card>
 
-						<hi9-card title="Families" barcolor="#AA3964" width="170" height="220" buttontitle="learn more" link="families">
+						<hi9-card title="Families" barcolor="#AA3964" link="families" imagedisplay="none">
 							<iron-icon icon="supervisor-account" style="color: #AA3964"></iron-icon>
+							<div class="description">
+								From Your Parents to Your Children to Your Loved Ones
+							</div>
 						</hi9-card>
 
-						<hi9-card title="Individuals" barcolor="#03B5A0" width="170" height="220" buttontitle="learn more" link="individuals">
+						<hi9-card title="Individuals" barcolor="#03B5A0" link="individuals" imagedisplay="none">
 							<iron-icon icon="account-circle" style="color: #03B5A0"></iron-icon>
+							<div class="description">
+								Control and Make Easy Technology
+							</div>
 						</hi9-card>
 					</div>
 			</section>

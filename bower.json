@@ -23,7 +23,8 @@
     "paper-input": "PolymerElements/paper-input#^1.1.15",
     "paper-fab": "PolymerElements/paper-fab#^1.2.0",
     "iron-ajax": "PolymerElements/iron-ajax#^1.4.3",
-    "polymerfire": "firebase/polymerfire#^0.9.4"
+    "polymerfire": "firebase/polymerfire#^0.9.4",
+    "deko-card": "Hi9Here/deko-card"
   },
   "devDependencies": {
     "web-component-tester": "^4.0.0"
