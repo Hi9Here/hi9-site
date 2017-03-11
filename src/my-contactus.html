@@ -1,53 +1,37 @@
-
 <link rel="import" href="hi9-elements.html">
+<link rel="import" href="../bower_components/signup-page/signup-page.html">
 
 <dom-module id="my-contactus">
 
-  <link rel=import type="css" href="styles/my-page-style.css">
-
   <template>
 
-    <style>
-      #company {
-        text-align: center;
-      }
-    </style>
+  <style include="shared-styles">
+    #text {
+      text-align: center;
+    }
+  </style>
 
+  <hi9-customer-card title="Contact Us" color="#c40121" icon="mail">        
 
-    <hi9-customer-card title="Contact Us" color="#7567B2" icon="question-answer"></iron-icon>
+    <section>
+      <signup-page></signup-page>
+    </section>
 
-      <h2>Keen To Hear</h2> 
-
+    <section>
       <div id="text">
-
+        <h2>Company Details</h2>
+        <p>Hi9 Hackit, Chy an Gover, Lamorna, Cornwall TR19 6XQ 01736 732324 Company No: 09162415 VAT No 211749424</p>
       </div>
-      
-      <div id="smallcard">
-        <hi9-wo-card-small></hi9-wo-card-small>
-        <hi9-kate-card-small></hi9-kate-card-small>
-        <hi9-phone-card-small></hi9-phone-card-small>
-        <hi9-facebook-card-small></hi9-facebook-card-small>
-        <hi9-twitter-card-small></hi9-twitter-card-small>
-        <hi9-instagram-card-small></hi9-instagram-card-small>
-      </div>
+    </section>
 
-    <div id="company">
-      <h2>Company Details</h2>
-      <p>Hi9 Hackit, Chy an Gover, Lamorna, Cornwall TR19 6XQ 01736 732324 Company No: 09162415 VAT No 211749424</p>
-    </div>
-
-    </hi9-customer-card>
-
+  </hi9-customer-card>
   </template>
-
+  
   <script>
+      Polymer({
 
-    Polymer({
+            is: 'my-contactus'
 
-      is: 'my-contactus'
-
-    });
-
+        });
   </script>
-
 </dom-module>

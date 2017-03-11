@@ -1,21 +1,9 @@
-    h2 {
-      font-weight: 300;
-      margin: 20px 0px 0px 20px;
-    }
-    
     #ctacard {
       float: right;
       width: 20%;
       padding-top: 10px;
       height: 170px;
     }
-    
-    #text {
-      margin: 10px 20px 10px 20px;
-      float: left;
-
-    }
-    
     #smallcard {
       display: block;
       text-align: center;

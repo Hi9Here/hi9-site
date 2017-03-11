@@ -1,32 +1,28 @@
+<!DOCTYPE html>
 <link rel="import" href="hi9-elements.html">
 
 <dom-module id="my-individuals">
 
-    <link rel=import type="css" href="styles/my-page-style.css">
-
     <template>
 
-    <style>
-     
+    <style include="shared-styles">
     </style>
 
     <hi9-customer-card title="Individuals" color="#03B5A0" icon="account-circle"></iron-icon>
 
+    <section>
+        <h2>The Web Made Simple at An Amazing Price</h2>       
 
-      <h2>The Web Made Simple at An Amazing Price</h2>       
+        <div id="text">
+            <p>Amazing hardware, at fantastic prices plus customer support.</p>
+            <p>An opportunity to sign up for deko - the software solution that makes the web simple no matter what your digital skills</p>
+            <p>With decko you can create your own library of weblinks clearly displayed on cards grouped together any way you want into decks. No more searching for your favourite sites, no more being disorganised, one place to store & share with friends & family. Excited? Sign up today!</p>
+        </div>
+    </section>
 
-      <div id="text">
-        <p>Amazing hardware, at fantastic prices plus customer support.</p>
-        <p>An opportunity to sign up for deko - the software solution that makes the web simple no matter what your digital skills</p>
-        <p>With decko you can create your own library of weblinks clearly displayed on cards grouped together any way you want into decks. No more searching for your favourite sites, no more being disorganised, one place to store & share with friends & family. Excited? Sign up today!</p>
-      </div>
-
-      <div id="smallcard">
-          <hi9-chromebook-card-small></hi9-chromebook-card-small>
-          <hi9-security-card-small></hi9-security-card-small>
-          <hi9-support-card-small></hi9-support-card-small>
-          <hi9-deko-card-small></hi9-deko-card-small>
-      </div>
+      <section>
+          <hi9-products></hi9-products>
+      </section>
 
     </hi9-customer-card>
 
