@@ -6,24 +6,6 @@
     <template>
 
 		<style is="custom-style" include="shared-styles">
-			.heroelement {
-				display: inline-block;
-				vertical-align:top;
-				width: 45%;
-			}
-
-			#hero {
-        text-align:center;
-				margin-top: 20px;
-			}
-			#herotext {
-				text-align: left;
-				margin: 20px 0px 0px 0px;
-			}
-			#heroimage iron-image {
-				height: 300px;
-				width:500px;
-			}
 			#custcards paper-material {
 				display: inline-block;
 				width: 200px;
@@ -56,12 +38,7 @@
 				margin: 0;
 				font-family: 'Roboto', 'Noto', sans-serif;
 				background-color: #eee;
-			}
-			
-			app-box {
-				height: 400px;
-			}
-			
+			}		
 			.blank article {
 				background-color: var(--app-primary-color);
 				background: none;
@@ -166,10 +143,6 @@
 				line-height: 1.3;
 			}
 			
-			.col {
-				width: 45%;
-				text-align: left;
-			}
 			h2 {
 				font-weight: 300;
 				font-size: 24px;
@@ -263,24 +236,17 @@
 
 		<body class="fullbleed" unresolved>
 
-			<section>
-				<app-box class="first" effects="parallax-background">
-					
-					<div id="hero">
-
-						<div id="herotext" class="heroelement">
+			<section class="middle-wrap">
+						<div class="col">
 							<h3>Technology & the Web Made Simple</h3>			
 								<h4>Using Next generation Hardware and Software, Hi9 offers a full range of services for anyone who finds technology and the web difficult. From NGO’s to helping a Family member we problem solve without the need for training.</h4>
 								<h4>Hi9 makes technology and the web work for its customers. It’s as simple as that.</h4>
 						</div>
 
-						<div id="heroimage" class="heroelement">			
+						<div class="col">			
 							<iron-image src="../images/sections/deko-laptop-mobile-wireframe.png" preload sizing="cover"></iron-image>					
 						</div>
-					
-					</div>
 
-				</app-box>
 			</section>
 
 			<section>
