@@ -17,11 +17,6 @@
       #yeses iron-icon {
             color: green;
       }
-      #nosandyes {
-            @apply(--layout-horizontal);
-            @apply(--layout-center-justified);
-            @apply(--layout-wrap);
-      }
       .middle-wrap {
             @apply(--layout-horizontal);
             @apply(--layout-center-justified);
@@ -35,7 +30,6 @@
          }
       h2 {
             font-weight: 300;
-            margin: 20px 0px 0px 20px;
       }
       h2.italic {
             font-style: italic;
@@ -63,6 +57,15 @@
             color: #fff;
             background-color: red;
       }
+      @media all and (max-width: 375px) {
+      .col {
+            width: 100%;
+            }
+      }
+      h3 {
+            font-size: 20px;
+      }
+
 
     </style>
   </template>
