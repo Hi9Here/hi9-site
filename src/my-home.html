@@ -6,129 +6,10 @@
     <template>
 
 		<style is="custom-style" include="shared-styles">
-			#custcards paper-material {
-				display: inline-block;
-				width: 200px;
-				height: 250px;
-				background-color: #fff;
-				padding: 16px;
-				margin: 100px 10px 10px 10px;
-				border-radius: 5px;
-				color: #757575;
-			}
-				
-			.blank article {
-				background-color: var(--app-primary-color);
-				background: none;
-			}
-			.first article {
-				background: none;
-				padding: 30px 0px 0px 0px;
-				background-color: #333;
-				opacity: 0.9;
-				padding: 10px 0px 1px 0px;
-				margin-bottom: 30px;
-			}
-			
-			.first hi9-card {
-				margin: 10px;
-			}
-			
-			.first #h2box {
-				margin-bottom: 10px;
-			}
-			
-			paper-button {
-				color: #fff;
-				background-color: red;
-			}
-
-			.second {
-				--app-box-background-front-layer: {
-					background: #fff;
-					background-position: bottom;
-					padding-bottom: 120px;
-					margin-top: -20px;
-					height: 400px;
-				}
-				;
-			}
-			
-			.third {
-				--app-box-background-front-layer: {
-					background-image: url(/images/bg/Croped/Families.jpg);
-					background-position: center;
-					padding-bottom: 120px;
-					margin-top: -20px;
-					height: 100%;
-				}
-				;
-			}
-			
-			.fourth {
-				--app-box-background-front-layer: {
-					background-image: url(/images/bg/Croped/For-you.jpg);
-					background-position: bottom;
-					padding-bottom: 120px;
-					margin-top: -20px;
-					height: 100%;
-				}
-				;
-			}
-			
-			.fifth {
-				--app-box-background-front-layer: {
-					background-image: url(/images/bg/Croped/Sharing.jpg);
-					background-position: bottom;
-					padding-bottom: 120px;
-					margin-top: -20px;
-					height: 100%;
-				}
-				;
-			}
-			
-			.sixth {
-				--app-box-background-front-layer: {
-					background-image: url(/images/bg/Croped/Anyone.jpg);
-					background-position: bottom;
-					padding-bottom: 120px;
-					margin-top: -20px;
-					height: 100%;
-				}
-				;
-			}
-			
 			article {
 				text-align: center;
 				padding: 20px;
 				background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))
-			}
-			
-			.sectiontext {
-				height: 500px;
-				line-height: 1.5;
-				display: block;
-			}
-			
-			.col h2 {
-				font-weight: 300;
-				font-size: 24px;
-				margin: 0;
-				font-family: ralewayextralight, "Helvetica Neue", Helvetica, Arial, sans-serif;
-				color: #333;
-				line-height: 1.3;
-			}
-			
-			h2 {
-				font-weight: 300;
-				font-size: 24px;
-				margin: 0;
-				font-family: ralewayextralight, "Helvetica Neue", Helvetica, Arial, sans-serif;
-				color: #333;
-				line-height: 1.3;
-			}
-			.blank h2 {
-				color: #333;
 			}
 			article p {
 				font-size: 20px;
@@ -148,14 +29,8 @@
 				margin: 0;
 			}
 			iron-icon {
-				margin: 5px 10px 10px 10px;
-				width: 34px;
-				height: 34px;
-				color: #333;
-			}
-			hi9-card iron-icon {
-				height: 120px;
-				width: 120px;
+				width: 130px;
+        height: 100px;
 			}
 			#secondsection {
 				background: white;
@@ -222,18 +97,20 @@
 						<div class="col">			
 							<iron-image src="../images/sections/deko-laptop-mobile-wireframe.png" preload sizing="contain"></iron-image>					
 						</div>
-
 			</section>
 
 			<section>
-				<article>
-					<h2>"Computers Are Just Too Hard to Use and It's Not Your Fault"</h2>
-					<h2 class="italic">Walt Mossberg – Executive Editor - Verge</h2>
+				<article id="secondsection" class="middle-wrap">
+					<iron-image src="../images/logo/Google.jpg" preload sizing="contain"></iron-image>
+					<iron-image src="../images/logo/Carephone-Warehouse.jpg" preload sizing="contain"></iron-image>
+					<iron-image src="../images/logo/Falmouth.jpg" preload sizing="contain"></iron-image>
+					<iron-image src="../images/logo/DCH-Logo.jpg" preload sizing="contain"></iron-image>
+					<iron-image src="../images/logo/Yarlington.jpg" preload sizing="contain"></iron-image>
 				</article>
 			</section>
 
 			<section>
-					<div id="custcards" class="middle-wrap">	
+					<div class="middle-wrap">	
 						
 						<hi9-card title="Organisations" barcolor="#c40121" link="organisation" imagedisplay="none">
 							<iron-icon icon="folder-shared" style="color: #c40121"></iron-icon>
@@ -259,17 +136,14 @@
 			</section>
 
 			<section>
-				<article id="secondsection" class="middle-wrap">
-					<iron-image src="../images/logo/Google.jpg" preload sizing="contain"></iron-image>
-					<iron-image src="../images/logo/Carephone-Warehouse.jpg" preload sizing="contain"></iron-image>
-					<iron-image src="../images/logo/Falmouth.jpg" preload sizing="contain"></iron-image>
-					<iron-image src="../images/logo/DCH-Logo.jpg" preload sizing="contain"></iron-image>
-					<iron-image src="../images/logo/Yarlington.jpg" preload sizing="contain"></iron-image>
+				<article>
+					<h2>"Computers Are Just Too Hard to Use and It's Not Your Fault"</h2>
+					<h2 class="italic">Walt Mossberg – Executive Editor - Verge</h2>
 				</article>
 			</section>
+			
 
 			<section>
-				<app-box class="second" effects="parallax-background">
 					<div class="middle-wrap">
 						<div class="col">
 							<h2>
@@ -292,7 +166,6 @@
 								<iron-icon icon="credit-card"></iron-icon>Affordable</h2>
 						</div>
 					</div>
-				</app-box>
 			</section>
 
 		</body>
