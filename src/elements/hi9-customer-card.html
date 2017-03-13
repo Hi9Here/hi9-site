@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 <link rel="import" href="../../bower_components/iron-image/iron-image.html">
 <link rel="import" href="../../bower_components/paper-toolbar/paper-toolbar.html">
@@ -18,7 +19,7 @@
         margin: 15px;
         border-radius: 5px;
         background-color: #fff;
-        height: 1400px;
+        padding-bottom: 20px;
       }
       h1 {
         font-size: 22px;
@@ -33,7 +34,7 @@
       a {
         text-decoration: none;
       }
-      paper-button {s
+      paper-button {
         color: #fff;
         background-color: red;
       }
@@ -57,11 +58,11 @@
       
     </style>
 
-      <paper-toolbar class="medium" style="background-color: {{color}}">
+      <paper-toolbar class="medium" style="background-color: [[color]]">
         <div title style="width:100%">     
-          <h1>{{title}}</h1>
+          <h1>[[title]]</h1>
         </div>
-        <iron-icon icon="{{icon}}"></iron-icon>
+        <iron-icon icon="[[icon]]"></iron-icon>
       </paper-toolbar>
 
       <content></content>

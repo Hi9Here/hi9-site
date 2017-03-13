@@ -22,7 +22,6 @@
     <style>
 
       :host {
-        display: block;
         --app-primary-color: #512DA8;
         --app-secondary-color: white;
       }
@@ -74,7 +73,7 @@
         color: #fff;
         background-color: red;
         height: 50px;
-        width: 120px;
+        width: 100px;
       }
       app-toolbar iron-icon {
         color: #fff;
@@ -121,7 +120,7 @@
           <div class="menu"><!--<a name="blog" href="/blog">Blog</a>--></div>
           <div class="menu"><a name="invest" href="/invest"><iron-icon icon="work"></iron-icon>Invest</a></div>
           <div class="menu"><!--<a name="joinus" href="/joinus">Join Us</a>--></div>
-          <div class="menu"><a name="contactus" href="/contactus"><iron-icon icon="question-answer"></iron-icon>Contact Us</a></div>
+          <div class="menu"><a name="contactus" href="/contactus"><iron-icon icon="mail"></iron-icon>Contact Us</a></div>
           <!--<a name="dev" href="/dev">.dev</a>-->
         </iron-selector>
       </app-drawer>
@@ -134,10 +133,10 @@
             <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
             <img src="../images/logo/hi9-logo-white.png" alt="">
             <div title></div>    
-              <a href="/getaquote">
+              <a href="/contactus">
                 <paper-button>
-                <iron-icon icon="create"></iron-icon>
-                    <h2>Quote</h2>
+                <iron-icon icon="mail"></iron-icon>
+                <iron-icon icon="perm-phone-msg"></iron-icon>
                 </paper-button>
               </a>
           </app-toolbar>
@@ -148,19 +147,22 @@
           <my-organisation name="organisation"></my-organisation>
           <my-families name="families"></my-families>
           <my-individuals name="individuals"></my-individuals>
-          <my-story name="story"></my-story>
+          <my-workshops name="workshops"></my-workshops>
+          <!--<my-story name="story"></my-story>-->
           <my-aboutus name="aboutus"></my-aboutus>
           <my-blog name="blog"></my-blog>
           <my-invest name="invest"></my-invest>
           <my-packages name="packages"></my-packages>
-          <my-joinus name="joinus"></my-joinus>
+          <!--<my-joinus name="joinus"></my-joinus>-->
           <my-contactus name="contactus"></my-contactus>
           <my-signup name="signup"></my-signup>
           <my-dev name="dev"></my-dev>
           <my-security name="security"></my-security>
           <my-deko name="deko"></my-deko>
           <my-support name="support"></my-support>
-          <my-laptop name="laptop"></my-laptop>
+          <my-chromebook name="chromebook"></my-chromebook>
+          <my-voice name="voice"></my-voice>
+          <my-bots name="bots"></my-bots>
           <my-connection name="connection"></my-connection>
           <my-getaquote on-done="thankUser" name="getaquote"></my-getaquote>
           <my-contactdone name="contactdone"></my-contactdone>

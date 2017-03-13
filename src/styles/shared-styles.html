@@ -1,0 +1,72 @@
+<!-- shared-styles.html -->
+<dom-module id="shared-styles">
+  <template>
+    <style>
+      section {
+            padding: 10px;
+      }
+      .options {
+            display: inline-block;
+            text-align: left;
+            width: 45%;
+      }
+      #nos iron-icon {
+            color: red;
+      }
+    
+      #yeses iron-icon {
+            color: green;
+      }
+      .middle-wrap {
+            @apply(--layout-horizontal);
+            @apply(--layout-center-justified);
+            @apply(--layout-wrap);
+      }
+      h1 {
+            font-size: 40px;
+            color: #fff;
+            font-weight: 500;
+            margin: 0;
+         }
+      h2 {
+            font-weight: 300;
+      }
+      h2.italic {
+            font-style: italic;
+      }
+      h3 {
+            font-weight: 400;
+            font-size: 30px;
+            margin: 10px 10px 10px 0px;
+            line-height: 1.2;
+      }
+      h4 {
+            font-weight: 300;
+      }
+      #text {
+            margin: 10px 20px 10px 20px;
+      }
+      a {
+            text-decoration: none;
+      }
+      .col {
+            width: 45%;
+            text-align: left;
+      }
+      paper-button {
+            color: #fff;
+            background-color: red;
+      }
+      @media all and (max-width: 1000px) {
+      .col {
+            width: 100%;
+            }
+      }
+      h3 {
+            font-size: 20px;
+      }
+
+
+    </style>
+  </template>
+</dom-module>

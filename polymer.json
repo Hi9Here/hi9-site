@@ -5,6 +5,10 @@
     "src/my-home.html",
     "src/my-organisation.html",
     "src/my-individuals.html",
+    "src/my-chromebook.html",
+    "src/my-voice.html",
+    "src/my-bots.html",
+    "src/my-workshops.html",
     "src/my-story.html",
     "src/my-aboutus.html",
     "src/my-invest.html",
@@ -15,9 +19,6 @@
     "src/my-security.html",
     "src/my-deko.html",
     "src/my-support.html",
-    "src/my-laptop.html",
-    "src/my-connection.html",
-    "src/my-getaquote.html",
-    "src/my-contactdone.html"
+    "src/my-laptop.html"
   ]
 }

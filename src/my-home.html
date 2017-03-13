@@ -1,319 +1,114 @@
-<link rel="import" href="../bower_components/polymer/polymer.html">
-<link rel="import" href="../bower_components/app-layout/app-scroll-effects/effects/parallax-background.html">
-<link rel="import" href="../bower_components/app-layout/app-box/app-box.html">
-<link rel="import" href="../bower_components/app-layout/demo/sample-content.html">
-<link rel="import" href="../bower_components/paper-button/paper-button.html">
-<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
-<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
-<link rel="import" href="../bower_components/iron-icons/hardware-icons.html">
-<link rel="import" href="../bower_components/iron-icons/image-icons.html">
-<link rel="import" href="../bower_components/paper-material/paper-material.html">
-<link rel="import" href="../bower_components/paper-toolbar/paper-toolbar.html">
-<link rel="import" href="../bower_components/iron-image/iron-image.html">
-<link rel="import" href="elements/hi9-card.html">
+<!DOCTYPE html>
+<link rel="import" href="hi9-elements.html">
 
 <dom-module id="my-home">
 
     <template>
 
-		<style is="custom-style">
-		#buttons {
-				text-align: center;
-			}
-			
-			#buttons paper-material {
-				display: inline-block;
-				width: 200px;
-				height: 250px;
-				background-color: #fff;
-				padding: 16px;
-				margin: 100px 10px 10px 10px;
-				border-radius: 5px;
-				color: #757575;
-			}
-			
-			#buttons h3 {
-				font-weight: 300;
-				color: #fff;
-				font-size: 26px;
-				background-color: #333;
-				opacity: 0.8;
-				padding: 10px;
-			}
-			
-			#buttons {
-				padding-top: 50px;
-			}
-			
-			h1 {
-				font-size: 40px;
-				color: #fff;
-				font-weight: 500;
-				margin: 0;
-			}
-			
-			body {
-				margin: 0;
-				font-family: 'Roboto', 'Noto', sans-serif;
-				background-color: #eee;
-			}
-			
-			app-box {
-				height: 500px;
-			}
-			
-			.blank article {
-				background-color: var(--app-primary-color);
-				background: none;
-			}
-			
-			.first {
-				--app-box-background-front-layer: {
-					background-image: url(/images/tech.jpg);
-					padding-bottom: 120px;
-					margin-top: -40px;
-					height: 100%;
-					background-color: #512da8;
-				}
-				;
-			}
-			
-			.first article {
-				background: none;
-				padding: 30px 0px 0px 0px;
-				background-color: #333;
-				opacity: 0.9;
-				padding: 10px 0px 1px 0px;
-				margin-bottom: 30px;
-			}
-			
-			.first hi9-card {
-				margin: 10px;
-			}
-			
-			.first #h2box {
-				margin-bottom: 10px;
-			}
-			
-			paper-button {
-				color: #fff;
-				background-color: red;
-			}
-			
-			.second {
-				--app-box-background-front-layer: {
-					background: #fff;
-					background-position: bottom;
-					padding-bottom: 120px;
-					margin-top: -20px;
-					height: 400px;
-				}
-				;
-			}
-			
-			.third {
-				--app-box-background-front-layer: {
-					background-image: url(/images/bg/Croped/Families.jpg);
-					background-position: center;
-					padding-bottom: 120px;
-					margin-top: -20px;
-					height: 100%;
-				}
-				;
-			}
-			
-			.fourth {
-				--app-box-background-front-layer: {
-					background-image: url(/images/bg/Croped/For-you.jpg);
-					background-position: bottom;
-					padding-bottom: 120px;
-					margin-top: -20px;
-					height: 100%;
-				}
-				;
-			}
-			
-			.fifth {
-				--app-box-background-front-layer: {
-					background-image: url(/images/bg/Croped/Sharing.jpg);
-					background-position: bottom;
-					padding-bottom: 120px;
-					margin-top: -20px;
-					height: 100%;
-				}
-				;
-			}
-			
-			.sixth {
-				--app-box-background-front-layer: {
-					background-image: url(/images/bg/Croped/Anyone.jpg);
-					background-position: bottom;
-					padding-bottom: 120px;
-					margin-top: -20px;
-					height: 100%;
-				}
-				;
-			}
-			
+		<style is="custom-style" include="shared-styles">
 			article {
 				text-align: center;
 				padding: 20px;
-				background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))
+				background: #555;
 			}
-			
-			.sectiontext {
-				height: 500px;
-				text-align: center;
-				line-height: 1.5;
-				display: block;
+			article p {
+				font-size: 20px;
+				color: #fff;
+				font-family: 'Roboto', 'Noto', sans-serif;
+				font-weight: 300;
+				padding: 0 20px 20px 20px;
 			}
-			
-			.col h2 {
+			article hr {
+				width: 100px;
+				height: 1px;
+				border: none;
+				margin: 20px auto;
+				background-color: black;
+			}
+			p {
+				margin: 0;
+			}
+			iron-icon {
+				width: 100px;
+        height: 50px;
+				color: #333;
+			}
+			#secondsection {
+				background: white;
+			}
+			#secondsection iron-image {
+				display: inline-block;
+				width: 70px;
+				width: 150px;
+				margin: 10px;
+			}
+			#thirdsection {
+				background: #fff;
+			}
+			#thirdsection h2 {
+				color: #333;
+			}
+			article img {
+				position: absolute;
+				top: 0px;
+				left: 40px;
+			}
+			#thirdsection hi9-card {
+				margin-left: 20px;
+			}
+			#secondsection iron-image {
+				height: 100px;
+    		width: 200px;
+			}
+			iron-image {
+				color: #333;
+				width: 100%;
+				height: 330px;
+			}
+			ul {
+				list-style-type: none;
+				padding-left: 10px;
+				text-align: left;
+			}
+			.cardlist {
+				width: 150px;
+				height: 130px;
+				font-weight: 300;
+			}
+			article h2 {
+				color: #fff;
 				font-weight: 300;
 				font-size: 24px;
 				margin: 0;
 				font-family: ralewayextralight, "Helvetica Neue", Helvetica, Arial, sans-serif;
-				color: #333;
 				line-height: 1.3;
 			}
-			
-			.col {
-				display: inline-block;
-				width: 45%;
-				text-align: left;
+			hi9-card iron-icon {
+				width: 120px;
+				height: 120px;
 			}
-		}
-		h2 {
-			font-weight: 300;
-			font-size: 24px;
-			margin: 0;
-			font-family: ralewayextralight, "Helvetica Neue", Helvetica, Arial, sans-serif;
-			color: #333;
-			line-height: 1.3;
-		}
-		.blank h2 {
-			color: #333;
-		}
-		article p {
-			font-size: 20px;
-			color: #fff;
-			font-family: 'Roboto', 'Noto', sans-serif;
-			font-weight: 300;
-			padding: 0 20px 20px 20px;
-		}
-		article hr {
-			width: 100px;
-			height: 1px;
-			border: none;
-			margin: 20px auto;
-			background-color: black;
-		}
-		p {
-			margin: 0;
-		}
-		iron-icon {
-			margin: 5px 10px 10px 10px;
-			width: 34px;
-			height: 34px;
-			color: #333;
-		}
-		iron-image {
-			width: 150;
-			height: 140px;
-		}
-		a {
-			text-decoration: none;
-		}
-		hi9-card iron-icon {
-			height: 140px;
-			width: 140px;
-		}
-		#secondsection {
-			background: white;
-		}
-		#secondsection iron-image {
-			display: inline-block;
-			width: 70px;
-			width: 150px;
-			margin: 10px;
-		}
-		#thirdsection {
-			background: #fff;
-		}
-		#thirdsection h2 {
-			color: #333;
-		}
-		article img {
-			position: absolute;
-			top: 0px;
-			left: 40px;
-		}
-		#thirdsection hi9-card {
-			margin-left: 20px;
-		}
-		#secondsection iron-image {
-			height: 120px;
-			width: 120px;
-		}
-		iron-image {
-			color: #333;
-			width: 30px;
-			height: 30px;
-		}
-		ul {
-			list-style-type: none;
-			padding-left: 10px;
-			text-align: left;
-		}
-		.cardlist {
-			width: 150px;
-			height: 130px;
-			font-weight: 300;
-		}
-		article h2 {
-			color: #fff;
-			font-weight: 300;
-			font-size: 24px;
-			margin: 0;
-			font-family: ralewayextralight, "Helvetica Neue", Helvetica, Arial, sans-serif;
-			line-height: 1.3;
-		}
 		</style>
 
-		</head>
 
 		<body class="fullbleed" unresolved>
 
 			<section>
-				<app-box class="first" effects="parallax-background">
-					<div id="buttons">
-						<h3>Technology & the Web Made so Simple there's No Need for Training</h3>
-						<hi9-card title="Organisations" barcolor="#c40121" width="170" height="220" buttontitle="learn more" link="organisation">
-							<iron-icon icon="folder-shared" style="color: #c40121"></iron-icon>
-						</hi9-card>
+				<div class="middle-wrap">
+						<div class="col">
+							<h3>Technology & the Web Made Simple</h3>			
+								<h4>Using Next generation Hardware and Software, Hi9 offers a full range of services for anyone who finds technology and the web difficult. From NGO’s to helping a Family member we problem solve without the need for training.</h4>
+								<h4>Hi9 makes technology and the web work for its customers. It’s as simple as that.</h4>
+						</div>
 
-						<hi9-card title="Families" barcolor="#AA3964" width="170" height="220" buttontitle="learn more" link="families">
-							<iron-icon icon="supervisor-account" style="color: #AA3964"></iron-icon>
-						</hi9-card>
-
-						<hi9-card title="Individuals" barcolor="#03B5A0" width="170" height="220" buttontitle="learn more" link="individuals">
-							<iron-icon icon="account-circle" style="color: #03B5A0"></iron-icon>
-						</hi9-card>
-
-					</div>
-				</app-box>
+						<div class="col">			
+							<iron-image src="../images/sections/deko-laptop-mobile-wireframe.png" preload sizing="contain"></iron-image>					
+						</div>
+				</div>
 			</section>
 
 			<section>
-				<article>
-					<h2>"Computers Are Just Too Hard to Use and It's Not Your Fault</h2>
-					<h2>Walt Mossberg – Executive Editor - Verge</h2>
-				</article>
-			</section>
-
-			<section>
-				<article id="secondsection">
-					<iron-image src="../images/logo/Google.jpg" preload sizing="contain"></iron-image>
+				<article id="secondsection" class="middle-wrap">
+					<iron-image src="../images/logo/google-launchpad.jpeg" preload sizing="contain"></iron-image>
 					<iron-image src="../images/logo/Carephone-Warehouse.jpg" preload sizing="contain"></iron-image>
 					<iron-image src="../images/logo/Falmouth.jpg" preload sizing="contain"></iron-image>
 					<iron-image src="../images/logo/DCH-Logo.jpg" preload sizing="contain"></iron-image>
@@ -322,30 +117,62 @@
 			</section>
 
 			<section>
-				<app-box class="second" effects="parallax-background">
-					<div class="sectiontext">
+					<div class="middle-wrap">	
+						
+						<hi9-card title="Organisations" barcolor="#c40121" link="organisation" imagedisplay="none">
+							<iron-icon icon="folder-shared" style="color: #c40121"></iron-icon>
+							<div class="description">
+								From Business to NGO to help Users that Find Technology Difficult
+							</div>
+						</hi9-card>
+
+						<hi9-card title="Families" barcolor="#AA3964" link="families" imagedisplay="none">
+							<iron-icon icon="supervisor-account" style="color: #AA3964"></iron-icon>
+							<div class="description">
+								From Your Parents to Your Children to Your Loved Ones
+							</div>
+						</hi9-card>
+
+						<hi9-card title="Individuals" barcolor="#03B5A0" link="individuals" imagedisplay="none">
+							<iron-icon icon="account-circle" style="color: #03B5A0"></iron-icon>
+							<div class="description">
+								Control and Make Easy Technology
+							</div>
+						</hi9-card>
+					</div>
+			</section>
+
+			<section>
+				<article>
+					<h2>"Computers Are Just Too Hard to Use and It's Not Your Fault"</h2>
+					<h2 class="italic">Walt Mossberg – Executive Editor - Verge</h2>
+				</article>
+			</section>
+			
+
+			<section>
+					<div class="middle-wrap">
 						<div class="col">
-							<h2>
-								<iron-icon icon="account-circle"></iron-icon>Full Support</h2>
-							<h2>
-								<iron-icon icon="bug-report"></iron-icon>No Anti Virus Software</h2>
-							<h2>
-								<iron-icon icon="thumb-up"></iron-icon>No Annoying Updates</h2>
-							<h2>
-								<iron-icon icon="hardware:security"></iron-icon>High Level Security</h2>
+							<h4>
+								<iron-icon icon="account-circle"></iron-icon>Full Support</h4>
+							<h4>
+								<iron-icon icon="bug-report"></iron-icon>No Anti Virus Software</h4>
+							<h4>
+								<iron-icon icon="thumb-up"></iron-icon>No Annoying Updates</h4>
+							<h4>
+								<iron-icon icon="hardware:security"></iron-icon>High Level Security</h4>
 						</div>
 						<div class="col">
-							<h2>
-                <iron-icon icon="image:tag-faces"></iron-icon>Custom Platform</h2>
-              <h2>
-								<iron-icon icon="apps"></iron-icon>No Apps to Install</h2>
-							<h2>
-								<iron-icon icon="card-giftcard"></iron-icon>Easy to Use Web</h2>
-							<h2>
-								<iron-icon icon="credit-card"></iron-icon>Affordable</h2>
+							<h4>
+                <iron-icon icon="image:tag-faces"></iron-icon>Custom Platform</h4>
+              <h4>
+								<iron-icon icon="apps"></iron-icon>No Apps to Install</h4>
+							<h4>
+								<iron-icon icon="card-giftcard"></iron-icon>Easy to Use Web</h4>
+							<h4>
+								<iron-icon icon="credit-card"></iron-icon>Affordable</h4>
 						</div>
 					</div>
-				</app-box>
 			</section>
 
 		</body>

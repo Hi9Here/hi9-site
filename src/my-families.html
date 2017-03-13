@@ -1,21 +1,19 @@
+<!DOCTYPE html>
 <link rel="import" href="hi9-elements.html">
 
 <dom-module id="my-families">
 
-    <link rel=import type="css" href="styles/my-page-style.css">
-
     <template>
 
-		<style>
+	<style include="shared-styles">
+	</style>
 
-		</style>
+	<hi9-customer-card title="Families" color="#AA3964" icon="social:people">
 
-		<hi9-customer-card title="Families" color="#AA3964" icon="social:people">
-
-
-			<h2>A Simpler, Safer Answer For The Whole Family</h2>
-
+		<section>
 			<div id="text">
+				<h2>A Simpler, Safer Answer For The Whole Family</h2>
+
 				<p>Don’t have time to be your parents tech support? Continually worried about your kids safety online? We have the answer.</p>
 				<p>Hi9 hardware is super secure, simple to set up & affordable. The Chromebook laptop is browser only, so no nasty updates plus it comes with pre-installed security. There's voice activation, which is great for the elderly or visually impaired & fab for the little ones. 
 				</p>
@@ -23,18 +21,16 @@
 				</p>
 				<p>Hi9 has developed deko - a platform that can organise all your family’s favourite sites, presented simply on cards grouped into decks - a shareable library all in one place. This means parents can choose suitable sites for their kids, so no more hidden monsters, or if it's for an elderly relative the curated content means no more confusing
 					searches & less susceptability to online fraud.</p>
-					<p>All our pacakages come with friendly telephone & online customer
-					support.</p>
+				<p>All our pacakages come with friendly telephone & online customer
+				support.</p>
 			</div>
+		</section>
 
-			<div id="smallcard">
-				<hi9-chromebook-card-small></hi9-chromebook-card-small>
-				<hi9-security-card-small></hi9-security-card-small>
-				<hi9-support-card-small></hi9-support-card-small>
-				<hi9-deko-card-small></hi9-deko-card-small>
-			</div>
+		<section>
+			<hi9-products></hi9-products>
+		</section>
 
-		</hi9-customer-card>
+	</hi9-customer-card>
 
 	</template>
 

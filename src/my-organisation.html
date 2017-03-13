@@ -1,52 +1,52 @@
+<!DOCTYPE html>
 <link rel="import" href="hi9-elements.html">
 
 <dom-module id="my-organisation">
 
-    <link rel=import type="css" href="styles/my-page-style.css">
-
     <template>
 
-    <style>
-
+    <style include="shared-styles">
     </style>
 
     <hi9-customer-card title="Organisation" color="#c40121" icon="folder-shared">
-
-      <h2>Perfect Digital Package</h2> 
       
-            <div id="nosandyes">
-              <div id="nos" class="options">
-                <h3><iron-icon icon="clear"></iron-icon>Nothing to Install</h3>
-                <h3><iron-icon icon="clear"></iron-icon>No Anti Virus Software</h3>
-                <h3><iron-icon icon="clear"></iron-icon>No Annoying Updates</h3>
+      <section>
+        <div id="text">
+        <h2>Perfect Digital Package</h2> 
+        
+              <div class="middle-wrap">
+                <div id="nos" class="options">
+                  <h3><iron-icon icon="clear"></iron-icon>Nothing to Install</h3>
+                  <h3><iron-icon icon="clear"></iron-icon>No Anti Virus Software</h3>
+                  <h3><iron-icon icon="clear"></iron-icon>No Annoying Updates</h3>
+                </div>
+                <div id="yeses" class="options">
+                  <h3><iron-icon icon="check"></iron-icon>Voice Activation</h3>
+                  <h3><iron-icon icon="check"></iron-icon>Complete Security</h3>
+                  <h3><iron-icon icon="check"></iron-icon>Customer Support</h3>
+                </div>
               </div>
-              <div id="yeses" class="options">
-                <h3><iron-icon icon="check"></iron-icon>Voice Activation</h3>
-                <h3><iron-icon icon="check"></iron-icon>Complete Security</h3>
-                <h3><iron-icon icon="check"></iron-icon>Customer Support</h3>
-              </div>
-            </div>
+        </div>
+      </section>
       
-      <div id="text">
-        <p>As an NGO, your job is to care for & create digital opportunities for your customers. Hi9’s job is to make that simple & affordable. How? With carefully selected, cost effective, intelligent hardware & software solutions.</p>
+      <section>
+        <div id="text">
+          <p>As an NGO, your job is to care for & create digital opportunities for your customers. Hi9’s job is to make that simple & affordable. How? With carefully selected, cost effective, intelligent hardware & software solutions.</p>
 
-        <p>Our digital bundles include a 11” or 14” Chromebook, MiFi with Data SIM, an optional Yubikey for extra security plus super-friendly telephone & online customer support.</p>
+          <p>Our digital bundles include a 11” or 14” Chromebook, MiFi with Data SIM, an optional Yubikey for extra security plus super-friendly telephone & online customer support.</p>
 
-        <p>The Chromebook is browser only so no updates, no security programmes to worry about. There are added extras like voice activation, ideal for anyone with poor eyesight, inability to type or with learning difficulties. The MiFi & Data SIM means you can keep control of costs - no contracts, no unexpected bills, while the Yubikey ramps up security plus offers one password option.</p>
+          <p>The Chromebook is browser only so no updates, no security programmes to worry about. There are added extras like voice activation, ideal for anyone with poor eyesight, inability to type or with learning difficulties. The MiFi & Data SIM means you can keep control of costs - no contracts, no unexpected bills, while the Yubikey ramps up security plus offers one password option.</p>
 
-        <p>When it comes to software Hi9 has developed a platform that redesigns & simplifies the way we use the web - Deko. Deko curates content & organises what's relevant on cards which are grouped into decks. But more than that, these cards & decks can be shared</p>
+          <p>When it comes to software Hi9 has developed a platform that redesigns & simplifies the way we use the web - Deko. Deko curates content & organises what's relevant on cards which are grouped into decks. But more than that, these cards & decks can be shared</p>
 
-        <p>For an NGO, we offer an admin. dashboard. This allows you to create bespoke cards & decks for your users, plus share information about events in the community, news within your organisation & more. Hi9 also offers administrators analytics, the ability to send out surveys, post reminders, in fact pretty much anything you want.</p>
- 
-      </div>
+          <p>For an NGO, we offer an admin. dashboard. This allows you to create bespoke cards & decks for your users, plus share information about events in the community, news within your organisation & more. Hi9 also offers administrators analytics, the ability to send out surveys, post reminders, in fact pretty much anything you want.</p>
+        </div>
+      </section>
 
-      <div id="smallcard">
-          <hi9-chromebook-card-small></hi9-chromebook-card-small>
-          <hi9-connection-card-small></hi9-connection-card-small>
-          <hi9-security-card-small></hi9-security-card-small>
-          <hi9-support-card-small></hi9-support-card-small>
-          <hi9-deko-card-small></hi9-deko-card-small>
-      </div>
+      <section>
+       <hi9-products></hi9-products>
+      </section>
+
 
     </hi9-customer-card>
 
